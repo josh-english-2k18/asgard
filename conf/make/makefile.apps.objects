@@ -1,0 +1,3 @@
+APPS_OBJS						= \
+		$(SRC_PATH)/c/apps/demo/demo.o \
+		$(SRC_PATH)/c/apps/troids/troids.o \

@@ -1,0 +1,45 @@
+/*
+ * dl_linux.h
+ *
+ * Copyright (C) 2008 - 2011 by Joshua S. English. This document is the
+ * intellectual property of Joshua S. English, all rights reserved.
+ *
+ * The Asgard dynamic-library interface, Linux plugin, header file.
+ *
+ * Written by Josh English.
+ */
+
+#if !defined(_CORE_OS_PLUGIN_DL_LINUX_H)
+
+#define _CORE_OS_PLUGIN_DL_LINUX_H
+
+#if !defined(_CORE_H) && !defined(_CORE_OS_PLUGIN_COMPONENT)
+#	error "Incorrect use of this header file."
+#endif // _CORE_H || _CORE_OS_PLUGIN_COMPONENT
+
+#if defined(__cplusplus)
+extern "C" {
+#endif // __cplusplus
+
+
+#if defined(__linux__) || defined(__APPLE__)
+
+
+// delcare dl (linux plugin) public functions
+
+int dl_openLinux(char *filename, void **handle);
+
+int dl_closeLinux(void *handle);
+
+int dl_lookupLinux(void *handle, char *functionName, void **function);
+
+
+#endif // __linux__
+
+
+#if defined(__cplusplus)
+};
+#endif // __cplusplus
+
+#endif // _CORE_OS_PLUGIN_DL_LINUX_H
+

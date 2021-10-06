@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{8a253226-8cdc-4693-9b81-cbc5e17acc95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\common">
+      <UniqueIdentifier>{2f450a42-118b-42ba-a642-499d995b42a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\common\plugin">
+      <UniqueIdentifier>{e8eeded1-5f03-4339-997a-3213ee207675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\library">
+      <UniqueIdentifier>{28b86102-f19d-4db3-9795-afe37e486494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\library\core">
+      <UniqueIdentifier>{4518b9a4-f60e-4324-915f-d5f3e08d3968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\library\system">
+      <UniqueIdentifier>{93be1aba-5526-47a5-8293-37dd6dd1cad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\library\util">
+      <UniqueIdentifier>{6eff147a-8563-4ea4-9b46-e3848e666a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\library\types">
+      <UniqueIdentifier>{532f2e52-5137-45e3-8ee9-fc667164dec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\library\network">
+      <UniqueIdentifier>{3f2d10d5-545c-4b01-8c94-7e2533f0dcd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\library\network\protocols">
+      <UniqueIdentifier>{dbfb53a9-fd20-45ff-846d-5f94fab69d52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\memory">
+      <UniqueIdentifier>{3ec28e1f-2569-4e6d-ad93-db18a5b777fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\os">
+      <UniqueIdentifier>{625888f4-d86e-4b52-85a2-0a19759aa19e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\os\plugin">
+      <UniqueIdentifier>{e03105dd-3f7a-46c9-9833-14b3ed03256e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\system">
+      <UniqueIdentifier>{8af1301d-9a38-4726-aa25-dd8cf78900da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\system\plugin">
+      <UniqueIdentifier>{79312318-c142-401f-8add-2b946504976c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{e7a3a3e8-e7a5-4e88-ab5f-2214770c3fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\common">
+      <UniqueIdentifier>{bcca96b2-2e52-4308-b7a1-9921b5997aaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\common\plugin">
+      <UniqueIdentifier>{436e04a9-5879-4352-af7a-97fb36a13eac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\library">
+      <UniqueIdentifier>{3725c891-32c0-419d-b610-185e6c216669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\library\core">
+      <UniqueIdentifier>{b4239ffb-eba4-4075-a65d-699cbc84c333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\library\system">
+      <UniqueIdentifier>{ab85333d-554c-44b3-bc17-69add306687c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\library\util">
+      <UniqueIdentifier>{fe382abf-c2e4-4272-b1b8-4e5950d85948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\library\types">
+      <UniqueIdentifier>{0618dc52-5208-4a95-aebf-f8f96e67430d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\library\network">
+      <UniqueIdentifier>{e2f7738f-89bc-45ae-9bb1-29a3e5c41c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\library\network\protocols">
+      <UniqueIdentifier>{6270cd4e-9a0c-4655-b2b7-b3f6cdf2b989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\memory">
+      <UniqueIdentifier>{8db555b4-5b63-4078-bfd5-53ec65fe24b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\os">
+      <UniqueIdentifier>{8fceec0d-8e6b-40cb-9b53-c970147325b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\os\plugin">
+      <UniqueIdentifier>{2b343d61-9b72-41eb-bacd-c9d3fd57dba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\system">
+      <UniqueIdentifier>{7e7ec648-7ed8-4c1d-98a7-34b9e67967ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\system\plugin">
+      <UniqueIdentifier>{6f178be0-1722-4b22-887f-a2f4316ba137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libasgardcore.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\common\common.c">
+      <Filter>Source Files\core\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\common\string.c">
+      <Filter>Source Files\core\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\common\plugin\dirent_windows.c">
+      <Filter>Source Files\core\common\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\core\ctype.c">
+      <Filter>Source Files\core\library\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\core\endian.c">
+      <Filter>Source Files\core\library\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\core\error.c">
+      <Filter>Source Files\core\library\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\core\serialize.c">
+      <Filter>Source Files\core\library\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\system\dir.c">
+      <Filter>Source Files\core\library\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\system\file.c">
+      <Filter>Source Files\core\library\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\system\tmf.c">
+      <Filter>Source Files\core\library\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\util\config.c">
+      <Filter>Source Files\core\library\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\util\crc32.c">
+      <Filter>Source Files\core\library\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\util\esa.c">
+      <Filter>Source Files\core\library\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\util\log.c">
+      <Filter>Source Files\core\library\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\util\pfs.c">
+      <Filter>Source Files\core\library\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\util\sha1.c">
+      <Filter>Source Files\core\library\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\util\zlib.c">
+      <Filter>Source Files\core\library\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\arraylist.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\bptree.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\fifostack.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\integer.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\intersect.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\json.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\lfbc.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\managed_index.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\range_index.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\wildcard_index.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\types\xpath.c">
+      <Filter>Source Files\core\library\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\network\server.c">
+      <Filter>Source Files\core\library\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\network\transaction_manager.c">
+      <Filter>Source Files\core\library\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\library\network\protocols\http.c">
+      <Filter>Source Files\core\library\network\protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\memory\memory.c">
+      <Filter>Source Files\core\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\os\dl.c">
+      <Filter>Source Files\core\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\os\time.c">
+      <Filter>Source Files\core\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\os\plugin\dl_windows.c">
+      <Filter>Source Files\core\os\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\os\plugin\time_windows.c">
+      <Filter>Source Files\core\os\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\mutex.c">
+      <Filter>Source Files\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\signal.c">
+      <Filter>Source Files\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\socket.c">
+      <Filter>Source Files\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\spinlock.c">
+      <Filter>Source Files\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\stacktrace.c">
+      <Filter>Source Files\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\system.c">
+      <Filter>Source Files\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\thread.c">
+      <Filter>Source Files\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\mutex_windows.c">
+      <Filter>Source Files\core\system\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\signal_windows.c">
+      <Filter>Source Files\core\system\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\socket_windows.c">
+      <Filter>Source Files\core\system\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\stacktrace_windows.c">
+      <Filter>Source Files\core\system\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\system_windows.c">
+      <Filter>Source Files\core\system\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\thread_windows.c">
+      <Filter>Source Files\core\system\plugin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libasgardcore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\core.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\common\common.h">
+      <Filter>Header Files\core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\common\macros.h">
+      <Filter>Header Files\core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\common\string.h">
+      <Filter>Header Files\core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\common\version.h">
+      <Filter>Header Files\core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\common\plugin\common_windows.h">
+      <Filter>Header Files\core\common\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\common\plugin\dirent_windows.h">
+      <Filter>Header Files\core\common\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\library.h">
+      <Filter>Header Files\core\library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\core\ctype.h">
+      <Filter>Header Files\core\library\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\core\endian.h">
+      <Filter>Header Files\core\library\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\core\error.h">
+      <Filter>Header Files\core\library\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\core\serialize.h">
+      <Filter>Header Files\core\library\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\system\dir.h">
+      <Filter>Header Files\core\library\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\system\file.h">
+      <Filter>Header Files\core\library\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\system\tmf.h">
+      <Filter>Header Files\core\library\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\util\config.h">
+      <Filter>Header Files\core\library\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\util\crc32.h">
+      <Filter>Header Files\core\library\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\util\esa.h">
+      <Filter>Header Files\core\library\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\util\esa_rules.h">
+      <Filter>Header Files\core\library\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\util\log.h">
+      <Filter>Header Files\core\library\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\util\pfs.h">
+      <Filter>Header Files\core\library\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\util\sha1.h">
+      <Filter>Header Files\core\library\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\util\zlib.h">
+      <Filter>Header Files\core\library\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\arraylist.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\bptree.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\fifostack.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\integer.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\intersect.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\json.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\lfbc.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\managed_index.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\range_index.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\wildcard_index.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\types\xpath.h">
+      <Filter>Header Files\core\library\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\network\server.h">
+      <Filter>Header Files\core\library\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\network\transaction_manager.h">
+      <Filter>Header Files\core\library\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\library\network\protocols\http.h">
+      <Filter>Header Files\core\library\network\protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\memory\memory.h">
+      <Filter>Header Files\core\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\os\dl.h">
+      <Filter>Header Files\core\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\os\time.h">
+      <Filter>Header Files\core\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\os\types.h">
+      <Filter>Header Files\core\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\os\plugin\dl_windows.h">
+      <Filter>Header Files\core\os\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\os\plugin\time_windows.h">
+      <Filter>Header Files\core\os\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\mutex.h">
+      <Filter>Header Files\core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\signal.h">
+      <Filter>Header Files\core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\socket.h">
+      <Filter>Header Files\core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\spinlock.h">
+      <Filter>Header Files\core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\stacktrace.h">
+      <Filter>Header Files\core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\system.h">
+      <Filter>Header Files\core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\thread.h">
+      <Filter>Header Files\core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\mutex_windows.h">
+      <Filter>Header Files\core\system\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\signal_windows.h">
+      <Filter>Header Files\core\system\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\socket_windows.h">
+      <Filter>Header Files\core\system\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\stacktrace_windows.h">
+      <Filter>Header Files\core\system\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\system_windows.h">
+      <Filter>Header Files\core\system\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\thread_windows.h">
+      <Filter>Header Files\core\system\plugin</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

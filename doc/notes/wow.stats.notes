@@ -1,0 +1,495 @@
+Notes on WoW combat-log statistical events.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Helpful URLs -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+http://code.google.com/p/stasiscl/
+http://stasisguild.org/sws/sws-patchwerk-1231309416/actor_0x000000000166f8bb.html
+
+http://www.wowwiki.com/API_COMBAT_LOG_EVENT
+http://www.wowwiki.com/UnitFlag
+http://www.wowwiki.com/UnitFlag
+
+http://www.wowhead.com/?spell=54755
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=- Statistical Summaries -=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+o summaries
+
+	o 'AppliedHealingSummary'
+		+ player: player name
+		+ player uid: the player uid
+		+ target: target name
+		+ target uid: the target uid
+		+ spell id: the spell id
+//		+ player class: the class of the player who cast the spell
+		+ spell name: the spell name
+		+ spell rank: the spell rank
+		+ direct count: the number of direct applications
+		+ periodic count: the number of periodic applications
+		+ heal amount: the total amount of healing applied
+		+ overheal amount: the total amount of overhealing applied
+		+ critical heal amount: the total amount of critical healing applied
+		+ critical overheal amount: the total amount of critical overhealing
+		  applied
+		+ critical count: the number of critical healings
+
+
+o acronyms
+	o DPS - damage per second
+	o HPS - healing per second
+
+o combat-log level summary (may be applied to a set of game events, e.g.
+  raid-log, etc.)
+	o duration: the amount of elapsed time (minutes/seconds) in the combat-log
+	o damage out: the total amount of damage delivered
+	o dps: the total DPS in the combat-log
+	o members: the number of players in the combat-log
+
+	o "damage out"
+		- player: player name
+		- presence: amount of time (minutes/seconds) played
+		- activity: the percentage of activity by time-played against total
+		  game-play time
+		- prescense dps: the DPS over the recorded presence of the player
+		- actual dps: the DPS over the total time of the combat-log
+		- damage out: the amount of damage delivered by the player
+		- damage out percentage: player damage versus total player damage
+
+	o "damage in"
+		- player: player name
+		- presence: amount of time (minutes/seconds) played
+		- deaths: the number of times the player died
+		- damage in: the amount of damage the player took
+		- damate in percentage: the player damage versus total player damage
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Event Types -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+	o global event attributes
+		+ time stamp (timestamp)
+		+ event id (string)
+		+ source uid (hex code)
+			+ source unit type (from uid hex code)
+		+ source name (string)
+		+ source flags (hex code)
+		+ target uid (hex code)
+			+ target unit type (from uid hex code)
+		+ target name (string)
+		+ target flags (hex code)
+
+	o 'special' events
+		o 'special-damage' events
+
+			- DAMAGE_SHIELD
+				+ spell id (integer)
+				+ spell name (string)
+				+ spell school (hex code)
+				+ damage amount (integer)
+				+ overkill amount (integer)
+				+ school (??? - appears to be spell school without the hex)
+				+ resist amount (integer)
+				+ block amount (integer)
+				+ absorbed ('0' is false)
+				+ was critical ('1' is true and 'nil' is false)
+				+ glancing ('1' is true and 'nil' is false)
+				+ crushing ('1' is true and 'nil' is false)
+
+			- DAMAGE_SHIELD_MISSED
+				+ spell id (integer)
+				+ spell name (string)
+				+ spell school (hex code)
+				+ miss type (string)
+				+ miss amount (integer)
+
+			- DAMAGE_SPLIT
+				+ spell id (integer)
+				+ spell name (string)
+				+ spell school (hex code)
+				+ damage amount (integer)
+				+ overkill amount (integer)
+				+ school (??? - appears to be spell school without the hex)
+				+ resist amount (integer)
+				+ block amount (integer)
+				+ absorbed ('0' is false)
+				+ was critical ('1' is true and 'nil' is false)
+				+ glancing ('1' is true and 'nil' is false)
+				+ crushing ('1' is true and 'nil' is false)
+
+		o 'special-enchant' events
+
+			- ENCHANT_APPLIED
+				+ spell name (string)
+				+ item id (integer)
+				+ item name (string)
+
+			- ENCHANT_REMOVED
+				+ spell name (string)
+				+ item id (integer)
+				+ item name (string)
+
+		o 'special-party' events
+
+			- PARTY_KILL
+				+ (no attributes)
+
+		o 'special-unit' events
+
+			- UNIT_DIED
+				+ (no attributes)
+
+			- *UNIT_DESTROYED
+				+ (no attributes)
+
+	o 'environmental' events
+
+		- ENVIRONMENTAL_DAMAGE
+			+ damage type (string)
+			+ damage amount (integer)
+			+ overkill amount (integer)
+			+ school (??? - appears to be spell school without the hex)
+			+ resist amount (integer)
+			+ block amount (integer)
+			+ absorbed ('0' is false)
+			+ was critical ('1' is true and 'nil' is false)
+			+ glancing ('1' is true and 'nil' is false)
+			+ crushing ('1' is true and 'nil' is false)
+
+	o 'range' events
+
+		- RANGE_DAMAGE
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ damage amount (integer)
+			+ overkill amount (integer)
+			+ school (??? - appears to be spell school without the hex)
+			+ resist amount (integer)
+			+ block amount (integer)
+			+ absorbed ('0' is false)
+			+ was critical ('1' is true and 'nil' is false)
+			+ glancing ('1' is true and 'nil' is false)
+			+ crushing ('1' is true and 'nil' is false)
+
+		- RANGE_MISSED
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ miss type (string, e.g. 'MISS', 'IMMUNE', etc.)
+			+ miss amount (integer)
+
+	o 'spell' events
+
+		- SPELL_AURA_APPLIED
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ aura type (string, 'BUFF' or 'DEBUFF')
+
+		- SPELL_AURA_APPLIED_DOSE
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ aura type (string, 'BUFF' or 'DEBUFF')
+			+ aura amount (integer)
+
+		- SPELL_AURA_BROKEN
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ aura type (string, 'BUFF' or 'DEBUFF')
+
+		- SPELL_AURA_BROKEN_SPELL
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ breaking spell id (integer)
+			+ breaking spell name (string)
+			+ breaking spell school (integer)
+			+ aura type (string, 'BUFF' or 'DEBUFF')
+
+		- SPELL_AURA_REFRESH
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ aura type (string, 'BUFF' or 'DEBUFF')
+
+		- SPELL_AURA_REMOVED
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ aura type (string, 'BUFF' or 'DEBUFF')
+
+		- SPELL_AURA_REMOVED_DOSE
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ aura type (string, 'BUFF' or 'DEBUFF')
+			+ aura amount (integer)
+
+		- SPELL_CAST_FAILED
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ reason (string)
+
+		- SPELL_CAST_START
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+
+		- SPELL_CAST_SUCCESS
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+
+		- SPELL_CREATE
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+
+		- SPELL_DAMAGE
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ damage amount (integer)
+			+ overkill amount (integer)
+			+ school (??? - appears to be spell school without the hex)
+			+ resist amount (integer)
+			+ block amount (integer)
+			+ absorbed ('0' is false)
+			+ was critical ('1' is true and 'nil' is false)
+			+ glancing ('1' is true and 'nil' is false)
+			+ crushing ('1' is true and 'nil' is false)
+
+		- SPELL_DISPEL
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ dispel spell id (integer)
+			+ dispel spell name (string)
+			+ dispel spell school (integer)
+			+ aura type (string, 'BUFF' or 'DEBUFF')
+
+		- SPELL_DISPEL_FAILED
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ dispel spell id (integer)
+			+ dispel spell name (string)
+			+ dispel spell school (integer)
+
+		- SPELL_ENERGIZE
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ energize amount (integer)
+			+ power type (integer indicating a power type ID)
+			+ extra energize amount (integer)
+
+		- SPELL_EXTRA_ATTACKS
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ extra attack amount (integer)
+
+		- SPELL_HEAL
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ healing amount (integer)
+			+ overhealing amount (integer)
+			+ was critical ('1' is true and 'nil' is false)
+
+		- SPELL_INSTAKILL
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+
+		- SPELL_INTERRUPT
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ interrupt spell id (integer)
+			+ interrupt spell name (string)
+			+ interrupt spell school (integer)
+
+		- SPELL_LEECH
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ leech amount (integer)
+			+ power type (integer indicating a power type ID)
+			+ extra leech amount (integer)
+
+		- SPELL_MISSED
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ miss type (string, e.g. 'MISS', 'IMMUNE', etc.)
+			+ miss amount (integer)
+
+		- SPELL_RESURRECT
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+
+		- SPELL_STOLEN
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ stolen spell id (integer)
+			+ stolen spell name (string)
+			+ stolen spell school (integer)
+			+ aura type (string, 'BUFF' or 'DEBUFF')
+
+		- SPELL_SUMMON
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+
+	o 'spell-periodic' events
+
+		- SPELL_PERIODIC_DAMAGE
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ damage amount (integer)
+			+ overkill amount (integer)
+			+ school (??? - appears to be spell school without the hex)
+			+ resist amount (integer)
+			+ block amount (integer)
+			+ absorbed ('0' is false)
+			+ was critical ('1' is true and 'nil' is false)
+			+ glancing ('1' is true and 'nil' is false)
+			+ crushing ('1' is true and 'nil' is false)
+
+		- SPELL_PERIODIC_ENERGIZE
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ energize amount (integer)
+			+ power type (integer indicating a power type ID)
+			+ extra energize amount (integer)
+
+		- SPELL_PERIODIC_HEAL
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ healing amount (integer)
+			+ overhealing amount (integer)
+			+ was critical ('1' is true and 'nil' is false)
+
+		- SPELL_PERIODIC_MISSED
+			+ spell id (integer)
+			+ spell name (string)
+			+ spell school (hex code)
+			+ miss type (string, e.g. 'MISS', 'IMMUNE', etc.)
+			+ miss amount (integer)
+
+	o 'spell-building' events
+
+		- ????
+
+	o 'swing' events
+
+		- SWING_DAMAGE
+			+ damage amount (integer)
+			+ overkill amount (integer)
+			+ school (??? - appears to be spell school without the hex)
+			+ resist amount (integer)
+			+ block amount (integer)
+			+ absorbed ('0' is false)
+			+ was critical ('1' is true and 'nil' is false)
+			+ glancing ('1' is true and 'nil' is false)
+			+ crushing ('1' is true and 'nil' is false)
+
+		- SWING_MISSED
+			+ miss type (string, e.g. 'MISS', 'IMMUNE', etc.)
+			+ miss amount (integer)
+
+
+* Note: this event has never been seen in known logs
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Database Design -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+o tables
+
+	o realm
+		o uid
+		o region - 'us' or 'eu'
+		o language
+		o name
+		o type - 'normal', 'pvp', 'rp', 'rp-pvp'
+
+	o user
+		o uid
+		o name
+		o email address
+		o password
+
+	o logHistory
+		o uid
+		o realm id
+		o user id
+		o uploaded (timestamp)
+		o processed (timestamp)
+		o file name
+		o parsed lines
+		o parse time
+		o parse rate
+		o valid events
+		o duplicate vents
+		o invalid events
+		o unknown events
+		o summary count
+		o not-applicable summary count
+		o summary index updates
+		o summary index update failures
+
+	o class
+		o uid
+		o name
+
+	o mob
+		o uid
+		o realm id
+		o class id
+		o name
+		o guid
+		o created (timestamp)
+		o last updated (timestamp)
+		o total seconds played
+
+	o summaryType
+		o uid
+		o name
+		o description
+		o table name
+
+	o summary
+		o uid
+		o realm id
+		o logHistory id
+		o summaryType id
+		o source mob id
+		o target mob id
+		o created (timestamp)
+		o last updated (timestamp)
+		o elapsed time seconds
+
+	o summaryAppliedHealing
+		o uid
+		o summary uid
+		o spell id
+		o spell name
+		o spell rank
+		o direct count
+		o periodic count
+		o heal amount
+		o overheal amount
+		o critical heal amount
+		o critical overheal amount
+		o critical count
+

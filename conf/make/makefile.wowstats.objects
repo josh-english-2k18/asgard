@@ -1,0 +1,15 @@
+WOWSTATS_OBJS						= \
+		$(SRC_PATH)/c/wowstats/core/event.o \
+		$(SRC_PATH)/c/wowstats/core/link.o \
+		$(SRC_PATH)/c/wowstats/core/parser.o \
+		$(SRC_PATH)/c/wowstats/core/spellindex.o \
+		$(SRC_PATH)/c/wowstats/core/timestamp.o \
+		$(SRC_PATH)/c/wowstats/db/bdb.o \
+		$(SRC_PATH)/c/wowstats/db/pgdb.o \
+		$(SRC_PATH)/c/wowstats/system/linkindex.o \
+		$(SRC_PATH)/c/wowstats/system/player.o \
+		$(SRC_PATH)/c/wowstats/system/playerindex.o \
+		$(SRC_PATH)/c/wowstats/system/summary.o \
+		$(SRC_PATH)/c/wowstats/system/summaryindex.o \
+		$(SRC_PATH)/c/wowstats/system/trigger.o \
+		$(SRC_PATH)/c/wowstats/system/wsdal.o \

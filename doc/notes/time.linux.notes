@@ -1,0 +1,52 @@
+       date(1), time(1), adjtimex(2), alarm(2),  getitimer(2),  getrlimit(2),  getrusage(2),  gettimeofday(2),  nanosleep(2),  stat(2),
+       time(2), times(2), utime(2), adjtime(3), clock(3), sleep(3), timeradd(3), ctime(3), strftime(3), strptime(3), usleep(3), rtc(4),
+       hwclock(8)
+	          date(1), gettimeofday(2), ctime(3), ftime(3), time(7)
+
+---add to the time library?
+SYNOPSIS
+       #include <time.h>
+
+       time_t time(time_t *t);
+
+DESCRIPTION
+       time() returns the time since the Epoch (00:00:00 UTC, January 1, 1970), measured in seconds.
+
+SYNOPSIS
+       #include <sys/time.h>
+
+       int getitimer(int which, struct itimerval *value);
+       int setitimer(int which, const struct itimerval *value,
+                     struct itimerval *ovalue);
+
+DESCRIPTION
+       The  system  provides  each  process  with  three  interval timers, each decrementing in a distinct time domain.  When any timer
+       expires, a signal is sent to the process, and the timer (potentially) restarts.
+
+       ITIMER_REAL    decrements in real time, and delivers SIGALRM upon expiration.
+
+       ITIMER_VIRTUAL decrements only when the process is executing, and delivers SIGVTALRM upon expiration.
+
+       ITIMER_PROF    decrements both when the process executes and when the system is executing on behalf  of  the  process.   Coupled
+                      with  ITIMER_VIRTUAL,  this timer is usually used to profile the time spent by the application in user and kernel
+                      space.  SIGPROF is delivered upon expiration.
+
+       Timer values are defined by the following structures:
+
+            struct itimerval {
+                struct timeval it_interval; /* next value */
+                struct timeval it_value;    /* current value */
+            };
+            struct timeval {
+                long tv_sec;                /* seconds */
+                long tv_usec;               /* microseconds */
+            };
+
+
+
+---add to the signal library?
+
+       #include <unistd.h>
+
+       unsigned int alarm(unsigned int seconds);
+alarm() arranges for a SIGALRM signal to be delivered to the process in seconds seconds.

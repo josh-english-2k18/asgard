@@ -1,0 +1,241 @@
+Realm Name,Type,Population
+Aegwynn,(PvP),Low
+Aerie Peak,Normal,High
+Agamaggan,(PvP),Low
+Aggramar,Normal,Max (Queued)
+Akama,(PvP),Medium
+Alexstrasza,Normal,High
+Alleria,Normal,Max (Queued)
+Altar of Storms,(PvP),Medium
+Alterac Mountains,(PvP),Low
+Aman'Thul,Normal,Low
+Andorhal,(PvP),Medium
+Anetheron,(PvP),Low
+Antonidas,Normal,High
+Anub'arak,(PvP),Low
+Anvilmar,Normal,High
+Arathor,Normal,Medium
+Archimonde,(PvP),Medium
+Area 52,Normal,High
+Argent Dawn,(RP),Max (Queued)
+Arthas,(PvP),Max (Queued)
+Arygos,Normal,High
+Auchindoun,(PvP),Low
+Azgalor,(PvP),Max (Queued)
+Azjol-Nerub,Normal,Max (Queued)
+Azshara,(PvP),Low
+Azuremyst,Normal,High
+Baelgun,Normal,Medium
+Balnazzar,(PvP),Low
+Barthilas,(PvP),Low
+Black Dragonflight,(PvP),Max (Queued)
+Blackhand,Normal,Max (Queued)
+Blackrock,(PvP),High
+Blackwater Raiders,(RP),Medium
+Blackwing Lair,(PvP),Low
+Blade's Edge,Normal,High
+Bladefist,Normal,High
+Bleeding Hollow,(PvP),Max (Queued)
+Blood Furnace,(PvP),Low
+Bloodhoof,Normal,High
+Bloodscalp,(PvP),Max (Queued)
+Bonechewer,(PvP),Max (Queued)
+Borean Tundra,Normal,Max (Queued)
+Boulderfist,(PvP),Max (Queued)
+Bronzebeard,Normal,High
+Burning Blade,(PvP),Max (Queued)
+Burning Legion,(PvP),Max (Queued)
+Caelestrasz,Normal,Low
+Cairne,Normal,Medium
+Cenarion Circle,(RP),Max (Queued)
+Cenarius,Normal,Max (Queued)
+Cho'gall,(PvP),Medium
+Chromaggus,(PvP),Low
+Coilfang,(PvP),Low
+Crushridge,(PvP),Max (Queued)
+Daggerspine,(PvP),Medium
+Dalaran,Normal,Max (Queued)
+Dalvengyr,(PvP),Low
+Dark Iron,(PvP),Max (Queued)
+Darkspear,(PvP),Max (Queued)
+Darrowmere,(PvP),Low
+Dath'Remar,Normal,Low
+Dawnbringer,Normal,Medium
+Deathwing,(PvP),Max (Queued)
+Demon Soul,(PvP),Low
+Dentarg,(PvP),Low
+Destromath,(PvP),Max (Queued)
+Dethecus,(PvP),Low
+Detheroc,(PvP),Medium
+Doomhammer,Normal,Max (Queued)
+Draenor,Normal,Max (Queued)
+Dragonblight,Normal,Max (Queued)
+Dragonmaw,(PvP),Max (Queued)
+Drak'Tharon,(PvP),Medium
+Drak'thul,(PvP),Low
+Draka,Normal,High
+Drakkari,(PvP),Low
+Dreadmaul,(PvP),Low
+Drenden,Normal,High
+Dunemaul,(PvP),Max (Queued)
+Durotan,Normal,Medium
+Duskwood,Normal,High
+Earthen Ring,(RP),Max (Queued)
+Echo Isles,Normal,High
+Eitrigg,Normal,Medium
+Eldre'Thalas,Normal,Max (Queued)
+Elune,Normal,High
+Emerald Dream,(RPPvP),Max (Queued)
+Eonar,Normal,High
+Eredar,(PvP),Medium
+Executus,(PvP),Medium
+Exodar,Normal,Medium
+Farstriders,(RP),Medium
+Feathermoon,(RP),High
+Fenris,Normal,Medium
+Firetree,(PvP),Max (Queued)
+Fizzcrank,Normal,Medium
+Frostmane,(PvP),Max (Queued)
+Frostmourne,(PvP),Low
+Frostwolf,(PvP),High
+Galakrond,Normal,Medium
+Garithos,(PvP),Low
+Garona,Normal,Max (Queued)
+Garrosh,Normal,Medium
+Ghostlands,Normal,Medium
+Gilneas,Normal,Medium
+Gnomeregan,Normal,Medium
+Gorefiend,(PvP),Medium
+Gorgonnash,(PvP),Medium
+Greymane,Normal,Medium
+Grizzly Hills,Normal,Low
+Gul'dan,(PvP),Low
+Gundrak,(PvP),Low
+Gurubashi,(PvP),Medium
+Hakkar,(PvP),Low
+Haomarush,(PvP),Medium
+Hellscream,Normal,Max (Queued)
+Hydraxis,Normal,Medium
+Hyjal,Normal,Max (Queued)
+Icecrown,Normal,Max (Queued)
+Illidan,(PvP),Max (Queued)
+Jaedenar,(PvP),Low
+Jubei'Thos,(PvP),Low
+Kael'thas,Normal,Medium
+Kalecgos,(PvP),Medium
+Kargath,Normal,High
+Kel'Thuzad,(PvP),Max (Queued)
+Khadgar,Normal,High
+Khaz Modan,Normal,Medium
+Khaz'goroth,Normal,Low
+Kil'Jaeden,(PvP),Max (Queued)
+Kilrogg,Normal,High
+Kirin Tor,(RP),Medium
+Korgath,(PvP),High
+Korialstrasz,Normal,Medium
+Kul Tiras,Normal,Medium
+Laughing Skull,(PvP),Max (Queued)
+Lethon,(PvP),Low
+Lightbringer,Normal,High
+Lightning's Blade,(PvP),Max (Queued)
+Lightninghoof,(RPPvP),Max (Queued)
+Llane,Normal,Medium
+Lothar,Normal,High
+Madoran,Normal,Medium
+Maelstrom,(RPPvP),Max (Queued)
+Magtheridon,(PvP),Max (Queued)
+Maiev,(PvP),Low
+Mal'Ganis,(PvP),Max (Queued)
+Malfurion,Normal,Medium
+Malorne,(PvP),Medium
+Malygos,Normal,Medium
+Mannoroth,(PvP),Max (Queued)
+Medivh,Normal,High
+Misha,Normal,Medium
+Mok'Nathal,Normal,Medium
+Moon Guard,(RP),Medium
+Moonrunner,Normal,Max (Queued)
+Mug'thol,(PvP),High
+Muradin,Normal,Medium
+Nagrand,Normal,Low
+Nathrezim,(PvP),Medium
+Nazgrel,Normal,Medium
+Nazjatar,(PvP),Low
+Ner'zhul,(PvP),High
+Nordrassil,Normal,Medium
+Norgannon,Normal,Medium
+Onyxia,(PvP),Low
+Perenolde,Normal,High
+Proudmoore,Normal,Medium
+Quel'dorei,Normal,Medium
+Quel'Thalas,Normal,Low
+Ragnaros,(PvP),Medium
+Ravencrest,Normal,Medium
+Ravenholdt,(RPPvP),Medium
+Rexxar,Normal,High
+Rivendare,(PvP),Medium
+Runetotem,Normal,Medium
+Sargeras,(PvP),Max (Queued)
+Saurfang,Normal,Low
+Scarlet Crusade,(RP),Medium
+Scilla,(PvP),Max (Queued)
+Sen'Jin,Normal,Medium
+Sentinels,(RP),Low
+Shadow Council,(RP),Medium
+Shadowmoon,(PvP),Medium
+Shadowsong,Normal,Max (Queued)
+Shandris,Normal,Medium
+Shattered Halls,(PvP),Low
+Shattered Hand,(PvP),Max (Queued)
+Shu'halo,Normal,Medium
+Silver Hand,(RP),High
+Silvermoon,Normal,Max (Queued)
+Sisters of Elune,(RP),Medium
+Skullcrusher,(PvP),Max (Queued)
+Skywall,Normal,Max (Queued)
+Smolderthorn,(PvP),Medium
+Spinebreaker,(PvP),Max (Queued)
+Spirestone,(PvP),Medium
+Staghelm,Normal,Medium
+Steamwheedle Cartel,(RP),Medium
+Stonemaul,(PvP),Medium
+Stormrage,Normal,High
+Stormreaver,(PvP),Max (Queued)
+Stormscale,(PvP),Max (Queued)
+Suramar,Normal,High
+Tanaris,Normal,Medium
+Terenas,Normal,Medium
+Terokkar,Normal,Medium
+Thaurissan,(PvP),Low
+The Forgotten Coast,(PvP),Medium
+The Scryers,(RP),Medium
+The Underbog,(PvP),Low
+The Venture Co,(RPPvP),Medium
+Thorium Brotherhood,(RP),Low
+Thrall,Normal,Max (Queued)
+Thunderhorn,Normal,High
+Thunderlord,(PvP),Medium
+Tichondrius,(PvP),Max (Queued)
+Tortheldrin,(PvP),Medium
+Trollbane,Normal,Medium
+Turalyon,Normal,Medium
+Twisting Nether,(RPPvP),Max (Queued)
+Uldaman,Normal,Medium
+Uldum,Normal,Medium
+Undermine,Normal,Medium
+Ursin,(PvP),Low
+Uther,Normal,Max (Queued)
+Vashj,(PvP),Low
+Vek'nilash,Normal,Medium
+Velen,Normal,Medium
+Warsong,(PvP),Medium
+Whisperwind,Normal,Max (Queued)
+WildHammer,(PvP),Max (Queued)
+Windrunner,Normal,Max (Queued)
+Winterhoof,Normal,Low
+Wyrmrest Accord,(RP),Low
+Ysera,Normal,Medium
+Ysondre,(PvP),Low
+Zangarmarsh,Normal,Medium
+Zul'jin,Normal,Max (Queued)
+Zuluhed,(PvP),Low

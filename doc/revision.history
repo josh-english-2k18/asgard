@@ -1,0 +1,1875 @@
+The revision history for Project Asgard.
+
+Copyright (C) 2008 - 2011 by Joshua S. English. This document is the
+intellectual property of Joshua S. English, all rights reserved.
+
+Date           Version     Author       Description
+------------   --------    ---------    ---------------------------------------
+[10/01/2008]   0.0.01      josh         Project creation.
+
+[03/05/2009]   0.0.02      josh       Initial checkin.
+
+[03/06/2009]   0.0.03      josh       Added directory-check to the unit-test execution script.
+
+[03/06/2009]   0.0.04      josh       Created the project revision history.
+
+[03/06/2009]   0.0.05      josh       Created a simply perl script to parse CVS logs into revision history.
+
+[03/08/2009]   0.0.06      josh       Added advanced linux-gcc compatibility.
+
+[03/11/2009]   0.0.07      josh       Created the dynamic-library loading plugin for windows.
+
+[03/11/2009]   0.0.08      josh       Added the memory unit test project to the windows solution.
+
+[03/11/2009]   0.0.09      josh       Added the dl unit test project to the windows solution.
+
+[03/13/2009]   0.0.10      josh       Added additional WoW event parsing-logic to the wowstats system.
+
+[03/16/2009]   0.0.11      josh       Added new event definition to the wow stats notes.
+
+[03/22/2009]   0.0.12      josh       Created the SHA-1 utility library.
+
+[03/22/2009]   0.0.13      josh       Performed a number of WoW-CPR project enhancements.
+
+[03/22/2009]   0.0.14      josh       Updated the wowcpr schema.
+
+[03/23/2009]   0.0.15      josh       Completed the alpha-ready wow-cpr statistical processing and summarization engine.
+
+[03/30/2009]   0.0.16      josh       Added the trigger system to the wowcpr application.
+
+[03/30/2009]   0.0.17      josh       Added new spells to the spellindex system.
+
+[03/30/2009]   0.0.18      josh       Created new player classes.
+
+[03/30/2009]   0.0.19      josh       Enhanced the postgres layer.
+
+[03/30/2009]   0.0.20      josh       Enhanced the player and playerindex systems.
+
+[03/30/2009]   0.0.21      josh       Added new summaries and corrected bugs in the summary index.
+
+[03/30/2009]   0.0.22      josh       Added new data-access to the data-acces slayers.
+
+[03/30/2009]   0.0.23      josh       Updated the SQL schema.
+
+[04/05/2009]   0.0.24      josh       Made a number of fixes and enhancements to the WoW cpr system.
+
+[04/14/2009]   0.0.25      josh       Created the link system.
+
+[04/14/2009]   0.0.26      josh       Made a number of updates to the summary engine.
+
+[04/14/2009]   0.0.27      josh       Added unrar to the staging script.
+
+[06/11/2009]   0.0.28      josh       Current make configuration.
+
+[06/11/2009]   0.0.29      josh       Added CVS placeholders.
+
+[06/11/2009]   0.0.30      josh       Current source-code base.
+
+[06/11/2009]   0.0.31      josh       Includes changes to both the Core and Wowstats packages.
+
+[06/11/2009]   0.0.32      josh       Current MSVC configuration.
+
+[06/17/2009]   0.0.33      josh       Patched the file i/o and unit-test to work in windows.
+
+[06/27/2009]   0.0.34      josh       Refactored the mutex system to include an advanced system for lock maintenance and error reporting.
+
+[06/27/2009]   0.0.35      josh       Updated the mutex unit test to include the new mutex API functions.
+
+[06/27/2009]   0.0.36      josh       Updated version numbering.
+
+[06/27/2009]   0.0.37      josh       Updated the MSVC project configuration and organization.
+
+[06/27/2009]   0.0.38      josh       Created the MSVC mutex unit test project.
+
+[06/27/2009]   0.0.39      josh       Created the MSVC signal unit test project.
+
+[06/27/2009]   0.0.40      josh       Created the MSVC system unit test project.
+
+[06/27/2009]   0.0.41      josh       Created the windows mutex plugin.
+
+[06/27/2009]   0.0.42      josh       Created the windows signal plugin.
+
+[06/30/2009]   0.0.43      josh       Updated the project-asgard MSVC solution.
+
+[06/30/2009]   0.0.44      josh       Enhanced the common macro settings for multi-platform utilization.
+
+[06/30/2009]   0.0.45      josh       Created the unsigned alint data-type aulint in the OS types library.
+
+[06/30/2009]   0.0.46      josh       Updated the Windows system plugin.
+
+[06/30/2009]   0.0.47      josh       Created the Windows stacktrace system plugin.
+
+[06/30/2009]   0.0.48      josh       Created the Windows thread system plugin.
+
+[06/30/2009]   0.0.49      josh       Created Java log4j-style application logging management system.
+
+[07/01/2009]   0.0.50      josh       Current make-dependancy configuration update.
+
+[07/01/2009]   0.0.51      josh       Created the function profiling system and unit test.
+
+[07/01/2009]   0.0.52      josh       Patched the make-dependency perl script to skip the CVS directory.
+
+[07/02/2009]   0.0.53      josh       Patched msvc compiler warnings in the function profiling system.
+
+[07/02/2009]   0.0.54      josh       Patched msvc compiler warnings in the windows mutex plugin.
+
+[07/02/2009]   0.0.55      josh       Enhanced the core log system to report on NULL log context to stdout.
+
+[07/02/2009]   0.0.56      josh       Created the MSVC asgard game engine basic unit test project.
+
+[07/02/2009]   0.0.57      josh       Created the MSVC function-profiling system project.
+
+[07/02/2009]   0.0.58      josh       Created the asgard game engine package.
+
+[07/02/2009]   0.0.59      josh       Created the asgard game engine core package.
+
+[07/02/2009]   0.0.60      josh       Created the asgard game engine canvas system.
+
+[07/02/2009]   0.0.61      josh       Created the asgard game engine opengl wrapper system with function profiling.
+
+[07/02/2009]   0.0.62      josh       Created the asgard game engine Windows api plugin.
+
+[07/02/2009]   0.0.63      josh       Created the asgard game engine basic unit test.
+
+[07/07/2009]   0.0.64      josh       Created Asgard game engine Targa image file test asset.
+
+[07/07/2009]   0.0.65      josh       Updated the Asgard game engine MSVC project configuration.
+
+[07/07/2009]   0.0.66      josh       Updated the Asgard project design notes.
+
+[07/07/2009]   0.0.67      josh       Enhanced the Asgard game engine main header file.
+
+[07/07/2009]   0.0.68      josh       Added window creation and destruction to the Asgard game engine core win32 API plugin.
+
+[07/07/2009]   0.0.69      josh       Created the Asgard game engine, engine package.
+
+[07/07/2009]   0.0.70      josh       Created the Asgard game engine Targa image file engin-plugin.
+
+[07/07/2009]   0.0.71      josh       Removed MSVC intellisense database as extraneous project file.
+
+[07/07/2009]   0.0.72      josh       Patched asgard game engine core canvas compiler warnings.
+
+[07/07/2009]   0.0.73      josh       Patched the asgard game engine basic unit test to compile on Linux.
+
+[07/07/2009]   0.0.74      josh       Created the asgard game engine windows font engine plugin.
+
+[07/07/2009]   0.0.75      josh       Created the asgard game engine 2D font system.
+
+[07/07/2009]   0.0.76      josh       Updated the asgard game engine OpenGL wrapper to include the new function calls.
+
+[07/07/2009]   0.0.77      josh       Enhanced the asgard game engine basic unit test to accomodate font testing.
+
+[07/08/2009]   0.0.78      josh       Added the asgard game engine.
+
+[07/08/2009]   0.0.79      josh       Added file-handle checks before executing file i/o functions on it to the core file i/o API.
+
+[07/08/2009]   0.0.80      josh       Updated vesion number and build date.
+
+[07/08/2009]   0.0.81      josh       Updated version number and date.
+
+[07/08/2009]   0.0.82      josh       Created a colors library for the Asgard game engine based upon common HTML color codes.
+
+[07/08/2009]   0.0.83      josh       Added RGBA color rendering to the OpenGL API.
+
+[07/08/2009]   0.0.84      josh       Updated the Win32 game engine core API to only use required function calls.
+
+[07/08/2009]   0.0.85      josh       Added color-bits to the Win32 game engine core API.
+
+[07/08/2009]   0.0.86      josh       Updated the asgard game engine basic unit test to test for color rendering.
+
+[07/08/2009]   0.0.87      josh       Updated the MSVC project file.
+
+[07/08/2009]   0.0.88      josh       Updated the asgard project design notes.
+
+[07/08/2009]   0.0.89      josh       Updated the revision-history perl script.
+
+[07/09/2009]   0.0.90      josh       Updated the font 2D drawing system to not require a needless helper function.
+
+[07/09/2009]   0.0.91      josh       Corrected the font 2D drawing system to reset the viewport when it is done drawning.
+
+[07/09/2009]   0.0.92      josh       Created the first cut of the 2D texture system.
+
+[07/09/2009]   0.0.93      josh       Added texture loading and rendering to the asgard game engine basic unit test.
+
+[07/10/2009]   0.0.94      josh       Updated canvas system to utilize screens smaller than 640x480 - the new smallest is 320x240.
+
+[07/10/2009]   0.0.95      josh       Patched sending width instead of height to the canvas screen orthographics.
+
+[07/10/2009]   0.0.96      josh       Added viewport reset on the canvas 2d render mode.
+
+[07/10/2009]   0.0.97      josh       Completed outstanding TODO item by adding the OpenGL API functionsused by the font system to the OpenGL wrapper.
+
+[07/10/2009]   0.0.98      josh       Completed outstanding TODO item by adding the OpenGL API functionsused by the texture system to the OpenGL wrapper.
+
+[07/10/2009]   0.0.99      josh       Updated Win32 API to utilize screens smaller than 640x480 - the new smallest is 320x240.
+
+[07/10/2009]   0.1.00      josh       Created constants in the Asgard game engine basic unit test to set the screen width and height.
+
+[07/10/2009]   0.1.01      josh       Added a draw font text over a 2d image test to the  Asgard game engine basic unit test.
+
+[07/11/2009]   0.1.02      josh       Created the initial instantiation of the Asgard game engine system-api for OpenGL and windowing.
+
+[07/11/2009]   0.1.03      josh       Updated the canvas system to use the Linux-API.
+
+[07/11/2009]   0.1.04      josh       Patched the font system to prevent a conflict with X11 fonts.
+
+[07/11/2009]   0.1.05      josh       Updated the Asgard game engine basic unit test to use the Linux-API.
+
+[07/11/2009]   0.1.06      josh       Added X-windows dependencies.
+
+[07/13/2009]   0.1.07      josh       Created the Linux font plugin for the Asgard game engine.
+
+[07/13/2009]   0.1.08      josh       Updated the font system to use the new plugin.
+
+[07/13/2009]   0.1.09      josh       Made a number of error-checking and performance enhancments to the Linux OS API for the Asgard game engine.
+
+[07/13/2009]   0.1.10      josh       Updated the canvas string-retreival system, and debugged the segmentation-fault when displaying large strings on Linux via the vsnprintf() call.
+
+[07/13/2009]   0.1.11      josh       Updated the asgard game engine basic unit test to use Linux fonts.
+
+[07/13/2009]   0.1.12      josh       Enhanced the asgard core string API to account for vsnprintf() errors on linux.
+
+[07/13/2009]   0.1.13      josh       Enhanced the asgard core library log utility to synchronize the stream before exiting.
+
+[07/13/2009]   0.1.14      josh       Enhanced the OpenGL API call order in the Windows font plugin.
+
+[07/13/2009]   0.1.15      josh       Updated revision history and makefile.
+
+[07/14/2009]   0.1.16      josh       Created the initial implementation of the Asgard game engine OS, keyboard and mouse events.
+
+[07/15/2009]   0.1.17      josh       Update preprocessor structure inthe core common header file.
+
+[07/15/2009]   0.1.18      josh       Created the linux key map asgard core plugin.
+
+[07/15/2009]   0.1.19      josh       Created the windows key map asgard core plugin.
+
+[07/15/2009]   0.1.20      josh       Added window-name checking to the asgard core api plugin.
+
+[07/15/2009]   0.1.21      josh       Enhanced the asgard core windows api plugin to support state checking.
+
+[07/15/2009]   0.1.22      josh       Enhanced the asgard core windows api plugin to contain a built-in messaging queue for obtaining messages from the OS and queuing them for application-layer consumption.
+
+[07/15/2009]   0.1.23      josh       Added the OS active event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.24      josh       Added the OS close event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.25      josh       Added the OS low-memory event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.26      josh       Added the OS screen resized event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.27      josh       Added the OS quit event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.28      josh       Added the keyboard pressed event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.29      josh       Added the keyboard released event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.30      josh       Added the keyboard typed event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.31      josh       Added the mouse pressed event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.32      josh       Added the mouse released event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.33      josh       Added the mouse clicked event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.34      josh       Added the mouse dragged event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.35      josh       Added the mouse moved event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.36      josh       Added the mouse wheel up event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.37      josh       Added the mouse wheel down event to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.38      josh       Added mouse left-button event-support to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.39      josh       Added mouse middle-button event-support to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.40      josh       Added mouse right-button event-support to the asgard core windows api plugin.
+
+[07/15/2009]   0.1.41      josh       Added the zmouse.
+
+[07/15/2009]   0.1.42      josh       h header file to the asgard core common header file.
+
+[07/15/2009]   0.1.43      josh       Completed the initial development of the asgard core events system.
+
+[07/15/2009]   0.1.44      josh       Updated the asgard core canvas to use the OS api.
+
+[07/15/2009]   0.1.45      josh       Created the asgard core OS independant key mappings.
+
+[07/15/2009]   0.1.46      josh       Updated the asgard basic unit test to use the new OS api.
+
+[07/15/2009]   0.1.47      josh       Enhanced the asgard basic unit test to check for events from the OS message queue.
+
+[07/15/2009]   0.1.48      josh       Implemented simple mouse and keyboard event handling in the asgard basic unit test.
+
+[07/15/2009]   0.1.49      josh       Created the asgard core OS independant api.
+
+[07/15/2009]   0.1.50      josh       Update asgard main header file.
+
+[07/15/2009]   0.1.51      josh       Patched compile errors in the asgard core events and asgard linux key map core plugin.
+
+[07/16/2009]   0.1.52      josh       Enhanced the asgard game engine linux api to support state-checking.
+
+[07/16/2009]   0.1.53      josh       Updated the OS api to use the new linux api functionality.
+
+[07/16/2009]   0.1.54      josh       Enhanced the asgard game engine linux api with key-pressed event handling.
+
+[07/16/2009]   0.1.55      josh       Enhanced the asgard game engine linux api with key-typed event handling.
+
+[07/16/2009]   0.1.56      josh       Corrected compile bug inthe linux font plugin for the asgard game engine.
+
+[07/16/2009]   0.1.57      josh       Created the MSVC thread management framework unit test project.
+
+[07/16/2009]   0.1.58      josh       Created the core system library thread management framework.
+
+[07/16/2009]   0.1.59      josh       Created the core system library thread management framework unit test.
+
+[07/16/2009]   0.1.60      josh       Updated the asgard design notes.
+
+[07/16/2009]   0.1.61      josh       Updated MSVC solution.
+
+[07/16/2009]   0.1.62      josh       Enhanced the Asgard game engine Linux API to use a background thread for window-state mangement.
+
+[07/16/2009]   0.1.63      josh       Patched compiler warningins in the core library thread management framework.
+
+[07/16/2009]   0.1.64      josh       Patch the Asgard game engine Linux API to correctly handle key-pressed and key-released events.
+
+[07/16/2009]   0.1.65      josh       Enhanced the Asgard game engine Linux API to handle mouse-moved events.
+
+[07/18/2009]   0.1.66      josh       Updated the MSVC asgard project.
+
+[07/18/2009]   0.1.67      josh       Added an RGBA color struct definition to the asgard game engine color color API.
+
+[07/18/2009]   0.1.68      josh       Enhanced the asgard game engine Font system to use font-type (uid) lookups to handle platform-independant font access at the application layer.
+
+[07/18/2009]   0.1.69      josh       Completed TODO item in the texture engine component of the game engine to apply color-masking to texture renders.
+
+[07/18/2009]   0.1.70      josh       Enhanced the asgard game engine basic unit test to test additional fonts obtained from the font system.
+
+[07/18/2009]   0.1.71      josh       Enhanced the asgard game engine basic unit test to test several types of color-masking.
+
+[07/21/2009]   0.1.72      josh       Enhanced the asgard game engine canvas core component to use the OpenGL lighting engine by default, but turned-off in 2d-rendering mode.
+
+[07/24/2009]   0.1.73      josh       Enhanced the asgard game engine basic unit test test-texture to support alpha-channel testing.
+
+[07/24/2009]   0.1.74      josh       Updated the project asgard MSVC solution.
+
+[07/24/2009]   0.1.75      josh       Enhanced the asgard game engine texture component to be able to create a texture from an RGBA color.
+
+[07/24/2009]   0.1.76      josh       Enhanced the asgard game engine texture component to be able to set hardware residency post-initialization.
+
+[07/24/2009]   0.1.77      josh       Enhanced the asgard game engine texture component to be able to set the quality level post-initialization.
+
+[07/24/2009]   0.1.78      josh       Enhanced the asgard game engine texture component to be able to set the render mode post-initilization.
+
+[07/24/2009]   0.1.79      josh       Enhanced the asgard game engine texture component to set a blend status.
+
+[07/24/2009]   0.1.80      josh       Enhanced the asgard game engine texture component to apply an RGBA color change instead of solely an Alpha channel change.
+
+[07/24/2009]   0.1.81      josh       Enhanced the asgard game engine texture component to set an RGBA color instead of solely an Alpha channel change.
+
+[07/24/2009]   0.1.82      josh       Updated the asgard game engine unit test to test the new texture component features.
+
+[07/25/2009]   0.1.83      josh       Enhanced the asgard engine font system to work correctly on Linux.
+
+[07/25/2009]   0.1.84      josh       Enhanced the Linux font engine plug-in to be more flexible in obtaining fonts from X windows.
+
+[07/25/2009]   0.1.85      josh       Enhanced the asgard game engine basic unit test to attempt to render only 60 frames per second.
+
+[07/28/2009]   0.1.86      josh       Updated the OpenGL error-handling in the core canvas system.
+
+[07/28/2009]   0.1.87      josh       Updated the asgard game engine basic unit test to use the new multithread-engine.
+
+[07/28/2009]   0.1.88      josh       Patched a bug in the thread management framework where thread IDs were not being assigned.
+
+[07/28/2009]   0.1.89      josh       Created the initial multi-threaded game engine.
+
+[07/28/2009]   0.1.90      josh       Added the X windows visual information to the OS API (Linux) core asgard plug-in.
+
+[07/28/2009]   0.1.91      josh       Enhanced the multithread-engine prototype to initialize OpenGL on Linux.
+
+[07/28/2009]   0.1.92      josh       Enhanced the error-reporting of the Linux mutex plug-in.
+
+[07/28/2009]   0.1.93      josh       Patched a bug in the multithreaded-engine prototype where the thread management framework was not initialized properly.
+
+[07/28/2009]   0.1.94      josh       Created the asgard multithreaded game engine basic unit test.
+
+[07/30/2009]   0.1.95      josh       Updated the MSVC solution with the new asgard game engine unit test.
+
+[07/30/2009]   0.1.96      josh       Created the MSVC asgard game engine unit test project.
+
+[07/30/2009]   0.1.97      josh       Enhanced the OS API game engine core with enable and disable functions for multi-threaded OpenGL utilization.
+
+[07/30/2009]   0.1.98      josh       Added a re-enable function for OpenGL to the Linux API game engine core plug-in.
+
+[07/30/2009]   0.1.99      josh       Added enable and disable of OpenGL functions to the Windows API game engine core plug-in.
+
+[07/30/2009]   0.2.00      josh       Made a thread-safety and minor code-cleanup pass to the Windows API game engine core plug-in.
+
+[07/30/2009]   0.2.01      josh       Removed the prototype OpenGL enabling from the asgard multi-threaded game engine and added the new core OS API functions.
+
+[08/01/2009]   0.2.02      josh       Enhanced the Linux API of the asgard game engine core plug-in with additional thread-safety features.
+
+[08/01/2009]   0.2.03      josh       Enhanced the Linux API of the asgard game engine core plug-in with the missing OS API function calls so that the source may compile.
+
+[08/01/2009]   0.2.04      josh       Enhanced the Linux API of the asgard game engine core plug-in by unifying the OpenGL enabling functionality.
+
+[08/01/2009]   0.2.05      josh       Slightly refactored the asgard main game engine component with internal-only threads, and external API calls for various core functionality.
+
+[08/01/2009]   0.2.06      josh       Updated and enhanced the asgard multithreaded-engine basic unit test to utilize the new engine API.
+
+[08/01/2009]   0.2.07      josh       Enhanced the thread management framework core library system component to correctly monitor the state of thread shutdown.
+
+[08/03/2009]   0.2.08      josh       Patched compile warning in the SHA-1 core library utility.
+
+[08/03/2009]   0.2.09      josh       Corrected main-loop timing issue (for Windows) in the asgard multithreaded-engine basic unit test.
+
+[08/03/2009]   0.2.10      josh       Enhanced the accuracy of usleep() and nanosleep() on Windows.
+
+[08/03/2009]   0.2.11      josh       Updated the os component time unit test.
+
+[08/04/2009]   0.2.12      josh       Updated the MSVC project configuration.
+
+[08/04/2009]   0.2.13      josh       Created the asgard game gine draw-2d API.
+
+[08/04/2009]   0.2.14      josh       Added the draw2d system to the main header file.
+
+[08/04/2009]   0.2.15      josh       Added baseline unit-tests of draw2d to the engine basic unit test.
+
+[08/26/2009]   0.2.16      josh       Updated the MSVS configuration to be location-agnostic.
+
+[08/26/2009]   0.2.17      josh       Patched the MSVS configuration to support release-mode builds.
+
+[08/26/2009]   0.2.18      josh       Added projectasgard.
+
+[08/26/2009]   0.2.19      josh       org images to CVS.
+
+[08/28/2009]   0.2.20      josh       Enhanced the OS API with multi-threaded aware OpenGL access.
+
+[08/28/2009]   0.2.21      josh       Enhanced the Win32 API with multi-threaded aware OpenGL access.
+
+[08/28/2009]   0.2.22      josh       Enhanced the game engine to enable the render and gameplay threads with OpenGL access.
+
+[08/28/2009]   0.2.23      josh       Patched the asgard basic and asgard engine basic unit tests with the updated APIs.
+
+[08/28/2009]   0.2.24      josh       Patched release-mode build of the asgard engine basic unit test MSVS configuration.
+
+[09/01/2009]   0.2.25      josh       Converted project to be a MSVS 2k8 project.
+
+[09/01/2009]   0.2.26      josh       Enhanced the asgard engine basic unit test by adding actual timing to the gameplay function rather than render-tick dependant timing.
+
+[09/10/2009]   0.2.27      josh       Updated the asgard game engine MSVS project files.
+
+[09/10/2009]   0.2.28      josh       Updated the colors API with corrected RGBA color codes.
+
+[09/10/2009]   0.2.29      josh       Patched the multithreaded-engine with render-timing analysis functions.
+
+[09/10/2009]   0.2.30      josh       Created the colors API function library with a helper function to obtain a 256-bit RGBA color by name.
+
+[09/10/2009]   0.2.31      josh       Created the initial frame for the Asgard game engine asset cache (AAC), along with configuration-file prototypes for 2D asset loading.
+
+[09/10/2009]   0.2.32      josh       Enhanced the core game engine colors system with additional color API helper functions.
+
+[09/11/2009]   0.2.33      josh       Completed the initial implementation of the asgard game engine asset cache (AAC).
+
+[09/11/2009]   0.2.34      josh       Patched the MSVS configuration to support the AAC.
+
+[09/11/2009]   0.2.35      josh       Updated the asgard game engine core colors API to match the AAC usage needs.
+
+[09/11/2009]   0.2.36      josh       Updated the multithreaded-engine unit test to perform basic AAC testing.
+
+[09/11/2009]   0.2.37      josh       Updated the unit-test font configuration with all available character sets.
+
+[09/11/2009]   0.2.38      josh       Enhanced the draw-2d interface to handle colored fonts.
+
+[09/11/2009]   0.2.39      josh       Enhanced the font system to load fonts from asset configuration files.
+
+[09/11/2009]   0.2.40      josh       Updated the AAC to load fonts using the new font API.
+
+[09/11/2009]   0.2.41      josh       Updated the multithreaded-engine basic unit test to sanity-test colored-font rendering.
+
+[09/11/2009]   0.2.42      josh       updated project revision history.
+
+[09/22/2009]   0.2.43      josh       Finialized the texture configuration file design.
+
+[09/22/2009]   0.2.44      josh       Added additional texture environment function wrappers to the OpenGL wrapper library.
+
+[09/22/2009]   0.2.45      josh       Completed the 2D set of functions in the AAC.
+
+[09/22/2009]   0.2.46      josh       Patched invalid Font configuration file loading in the Font library.
+
+[09/22/2009]   0.2.47      josh       Enhanced the Texture library with configuration file loading.
+
+[09/22/2009]   0.2.48      josh       Updated the Texture API with a unified set of constants, and API function calls.
+
+[09/22/2009]   0.2.49      josh       Patched the unit tests to reflect the new AAC functionality and the new API.
+
+[09/22/2009]   0.2.50      josh       Updated the date/version build information for Windows.
+
+[09/25/2009]   0.2.51      josh       Removed the lighting (for now) from the default canvas 3D mode - no light sources yet.
+
+[09/25/2009]   0.2.52      josh       Patched a minor typo and added a TODO item to the asset cache.
+
+[09/25/2009]   0.2.53      josh       Created the math package, and common header file.
+
+[09/25/2009]   0.2.54      josh       Created the engine shapes package.
+
+[09/25/2009]   0.2.55      josh       Created the initial 3D sphere library.
+
+[09/25/2009]   0.2.56      josh       Created a temporary patch to the engine basic unit test to test the sphere render.
+
+[09/28/2009]   0.2.57      josh       Created the core JSON type library.
+
+[09/28/2009]   0.2.58      josh       Created the core JSON type library unit test.
+
+[09/28/2009]   0.2.59      josh       Patched the asgard core Linux API plugin to conform to the multithreaded engine model.
+
+[09/28/2009]   0.2.60      josh       Updated mutexing in the asgard core Windows API plugin.
+
+[09/28/2009]   0.2.61      josh       Patched compiler issue in the asgard engine font system.
+
+[09/28/2009]   0.2.62      josh       Added a new string concatenation with automatic expansion to the string library.
+
+[09/28/2009]   0.2.63      josh       Added the JSON type library to the core libary package.
+
+[09/28/2009]   0.2.64      josh       Patched a bug with length checking for malloc() and realloc() in the memory wrapper.
+
+[09/29/2009]   0.2.65      josh       Created the asgard types libary JSON unit-test MSVS project.
+
+[09/29/2009]   0.2.66      josh       Patched the strlen() macro in the string wrapper libary to prefix an (int) casting to minimize MSVS compiler warnings.
+
+[09/30/2009]   0.2.67      josh       Added makefiles for the asgard game engine project.
+
+[09/30/2009]   0.2.68      josh       Patched OpenGL utilization notification between threads in the multithreaded engine.
+
+[09/30/2009]   0.2.69      josh       Enhanced the rendering logic in the 3D sphere shape library.
+
+[10/07/2009]   0.2.70      josh       Added 3d sphere shape OpenGL calls to the core OpenGL function API wrapper.
+
+[10/07/2009]   0.2.71      josh       Patched the 3d sphere shape to use the function wrapper.
+
+[10/07/2009]   0.2.72      josh       Combined the rendering pipeline on the multithreaded engine basic unit test to show all assets in the pipeline.
+
+[10/16/2009]   0.2.73      josh       Patched a number of MSVC compiler warnings in the core framework source code.
+
+[10/16/2009]   0.2.74      josh       Made a finalization pass on the 3D sphere shape type.
+
+[10/20/2009]   0.2.75      josh       Created the initial draw 3D api for the asgard game engine.
+
+[10/20/2009]   0.2.76      josh       Updated the multithreaded engine basic unit test to validate the 3D drawing api.
+
+[10/20/2009]   0.2.77      josh       Patched a typo in the draw2d c file.
+
+[10/21/2009]   0.2.78      josh       Created the initial cut of the asgard engine rendering pipeline management system.
+
+[10/21/2009]   0.2.79      josh       Created the initial unit test and MSVS project setup for the pipeline component.
+
+[10/21/2009]   0.2.80      josh       Created the initial unit-test configuration asset file for the pipeline.
+
+[10/22/2009]   0.2.81      josh       Completed the intitial code to add and render objects in the asgard game engine rendering pipeline management system.
+
+[10/22/2009]   0.2.82      josh       Updated the pipeline unit test to reflect the current performance capabilities.
+
+[10/23/2009]   0.2.83      josh       Enhanced the 3d sphere shape to load meshes from a configuration file.
+
+[10/23/2009]   0.2.84      josh       Enhanced the asset cache system to load 3d objects.
+
+[10/23/2009]   0.2.85      josh       Enhanced the asset cache system to return 3d objects.
+
+[10/23/2009]   0.2.86      josh       Enhanced the asset cache system to load 3d sphere shape meshes.
+
+[10/23/2009]   0.2.87      josh       Enhanced the draw3d system to obtain a sphere object from an existing sphere shape.
+
+[10/23/2009]   0.2.88      josh       Patched the pipeline unit test to validate 3d object rendering.
+
+[10/23/2009]   0.2.89      josh       Updated the pipeline code to reflect its current functionality state, and prepared it for the addition of the configuration file load.
+
+[10/27/2009]   0.2.90      josh       Patched missing c++ wrapper logic from various asgard project header files.
+
+[10/27/2009]   0.2.91      josh       Created the asgard engine OpenGL lighting engine wrapper effect.
+
+[10/27/2009]   0.2.92      josh       Began porting the 3D vector library api.
+
+[10/28/2009]   0.2.93      josh       Completed the port of the 3D vector math library.
+
+[10/28/2009]   0.2.94      josh       Created the 3D axis-aligned box math library.
+
+[10/28/2009]   0.2.95      josh       Created the 3D plane geometry math library.
+
+[10/28/2009]   0.2.96      josh       Added initial 3D cone shape header file.
+
+[10/28/2009]   0.2.97      josh       Fixed several critial issues with the pipeline.
+
+[11/04/2009]   0.2.98      josh       Added additional drawing functions - lines and rectangles - to the 2D drawing interface library.
+
+[11/04/2009]   0.2.99      josh       Patched a software-engineering best-practice issue in the texture rendering code.
+
+[11/04/2009]   0.3.00      josh       Patched the misuse of the PI constant in the math common library.
+
+[11/04/2009]   0.3.01      josh       Enhanced the utility of the 3D sphere object in the pipeline unit test.
+
+[11/04/2009]   0.3.02      josh       Created the initial quaternion-based camera system for FPS and FPV views.
+
+[11/04/2009]   0.3.03      josh       Created the 3d Wavefront Object engine plug-in for static meshes.
+
+[11/06/2009]   0.3.04      josh       Completed the 3D static mesh cone shape library.
+
+[11/06/2009]   0.3.05      josh       Patched a list-deletion mistake in the 3D static mesh sphere library.
+
+[11/06/2009]   0.3.06      josh       Updated the 3D drawing interface to support the 3D cone type.
+
+[11/06/2009]   0.3.07      josh       Updated the asset cache to load 3D cone assets.
+
+[11/06/2009]   0.3.08      josh       Patched the basic multithreaded engine unit test to validate 3D cone rendering.
+
+[11/06/2009]   0.3.09      josh       Created the 3D cone static mesh shape unit test configuration file.
+
+[11/06/2009]   0.3.10      josh       Updated the pipeline unit test to validate AAC and pipeline-based rendering of the 3D cone asset.
+
+[11/09/2009]   0.3.11      josh       Added missing CGI functions to wrap OpenGL calls within the Asgard game engine code base.
+
+[11/09/2009]   0.3.12      josh       Updated various components to use the CGI interface instead of direct OpenGL calls.
+
+[11/09/2009]   0.3.13      josh       Completed the initial integration pass on the Wavefront object asgard engine plug-in library.
+
+[11/09/2009]   0.3.14      josh       Created a unit test to validate the functionality of the Wavefront object plug-in.
+
+[11/09/2009]   0.3.15      josh       Added the buggy wavefront object static mesh.
+
+[11/10/2009]   0.3.16      josh       Patched a compiler error in the OpenGL wrapper library.
+
+[11/10/2009]   0.3.17      josh       Created the Wavefront object plug-in MSVS project.
+
+[11/10/2009]   0.3.18      josh       Created the GUI widget package.
+
+[11/10/2009]   0.3.19      josh       Created the common GUI widget header file.
+
+[11/10/2009]   0.3.20      josh       Created the intial implementation of the GUI button widget.
+
+[11/10/2009]   0.3.21      josh       Created the asgard multithreaded engine GUI widget unit test.
+
+[11/10/2009]   0.3.22      josh       Completed the initial testing and implmented a number of patches to the GUI button widget.
+
+[11/10/2009]   0.3.23      josh       Updated the Linux API for the asgard game engine to be safer and more reliable.
+
+[11/10/2009]   0.3.24      josh       Updated the asgard multithreaded game engine core to properly support OS level events.
+
+[11/10/2009]   0.3.25      josh       Updated the MSVS main project configuration.
+
+[11/10/2009]   0.3.26      josh       Created the MSVS project configuration for the GUI widget unit test.
+
+[11/10/2009]   0.3.27      josh       Enhanced the 3d drawning API to include a frustum.
+
+[11/10/2009]   0.3.28      josh       Enhanced the GUI button widget's state management system.
+
+[11/10/2009]   0.3.29      josh       Patched a minor typo in the 3D plane math library.
+
+[11/10/2009]   0.3.30      josh       Created the default set of four textures for the GUI button widget.
+
+[11/10/2009]   0.3.31      josh       Created the gui asset package and the initial configuration for the GUI button widget.
+
+[11/10/2009]   0.3.32      josh       Created the 3D frustum math library.
+
+[11/11/2009]   0.3.33      josh       Patched 3D rendering of the Wfobject after performing cursory debugging.
+
+[11/11/2009]   0.3.34      josh       Enhanced the canvas begin-render system to support setting mainline OpenGL attributes.
+
+[11/19/2009]   0.3.35      josh       Patched a bug in the GUI button widget.
+
+[11/19/2009]   0.3.36      josh       Completed the initial texture-testing of the GUI button widget.
+
+[11/19/2009]   0.3.37      josh       Added background 3D rendering to the Wfobj unit test.
+
+[11/19/2009]   0.3.38      josh       Created the block tile stone surface #1.
+
+[11/19/2009]   0.3.39      josh       Added OpenGL error-checking as a public function to the canvas API.
+
+[11/19/2009]   0.3.40      josh       Updated the OS API to include moving the mouse cursor.
+
+[11/19/2009]   0.3.41      josh       Updated the Win32 API to include moving the mouse cursor.
+
+[11/19/2009]   0.3.42      josh       Added sanity-checking for mouse-movement to the camera mouse application function.
+
+[11/19/2009]   0.3.43      josh       Added OpenGL error-checking to the 2D drawing API.
+
+[11/19/2009]   0.3.44      josh       Added enabling of the OpenGL lighting engine to the GL light API.
+
+[11/19/2009]   0.3.45      josh       Removed typo from the GUI widget unit test.
+
+[11/19/2009]   0.3.46      josh       Added OpenGL lists, lighting, and the initial camera system to the Wfobj unit test.
+
+[11/20/2009]   0.3.47      josh       Added mouse-warping to the Linux API.
+
+[11/20/2009]   0.3.48      josh       Updated the OS API to use the new Linux API functions.
+
+[11/20/2009]   0.3.49      josh       Patched the linux language keys to primarily use the lower-case letter set.
+
+[11/20/2009]   0.3.50      josh       Added some debugging to the camera system and Wfobj unit test.
+
+[11/20/2009]   0.3.51      josh       Updated the Win32 API for mouse positioning.
+
+[11/20/2009]   0.3.52      josh       Updated the wfobj bounding-box logic and rendering artificat(s).
+
+[11/20/2009]   0.3.53      josh       Patched rendering artifacts in the Wfobj unit test.
+
+[12/01/2009]   0.3.54      josh       Updated OS and Linux APIs with additional mouse functions.
+
+[12/01/2009]   0.3.55      josh       Enhanced and corrected issues witht he camera system.
+
+[12/01/2009]   0.3.56      josh       Updated the Wfobj library.
+
+[12/01/2009]   0.3.57      josh       Added additional known-object rendering instructions to the Wfobj unit test.
+
+[12/09/2009]   0.3.58      josh       Added the set of default crosshairs textures.
+
+[12/09/2009]   0.3.59      josh       Added a new surface type - concrete - and the first concrete surface texture.
+
+[12/09/2009]   0.3.60      josh       Added property-setting to the texture enable function.
+
+[12/09/2009]   0.3.61      josh       Patched the OS and Win32 api's with show and hide mouse cursor functions.
+
+[12/09/2009]   0.3.62      josh       Enhanced the texture system with correct property settings on apply and un-apply.
+
+[12/09/2009]   0.3.63      josh       Modified the Wfobj engine unit test to correctly make the call to the OS to hide the mouse cursor, and added mouse-cursor debugging.
+
+[12/22/2009]   0.3.64      josh       Corrected keyboard-sampling and mouse-positioning in Win32.
+
+[12/22/2009]   0.3.65      josh       Corrected keyboard-state settings in the multithreaded engine.
+
+[12/22/2009]   0.3.66      josh       Patched rendering and initialization problems in the texture system.
+
+[12/22/2009]   0.3.67      josh       Removed extraneous debug code from the Wfobj unit test.
+
+[12/22/2009]   0.3.68      josh       Created the initial material library system.
+
+[12/22/2009]   0.3.69      josh       Updated mouse-positional rendering for the basic multithreaded unit test.
+
+[12/22/2009]   0.3.70      josh       Added frustum culling and light debugging to the wfobj unit test.
+
+[12/22/2009]   0.3.71      josh       Added frustum culling to the wfobj library.
+
+[12/22/2009]   0.3.72      josh       Enhanced the wfobj library bounding-box logic.
+
+[12/22/2009]   0.3.73      josh       Streamlined and enhanced the OpenGL light system wrapper.
+
+[12/22/2009]   0.3.74      josh       Patched the Win32 api with in-window corrected mouse-positioning and coordinates.
+
+[12/22/2009]   0.3.75      josh       Updated the OpenGL state-machine initialization in the canvas system.
+
+[12/23/2009]   0.3.76      josh       Added opengl-lists to the wfobj render function.
+
+[12/28/2009]   0.3.77      josh       *** empty log message ***.
+
+[12/29/2009]   0.3.78      josh       Added position translation to the 3d sphere shapes rendering function.
+
+[12/29/2009]   0.3.79      josh       Updated the wfobj plugin to render the bounding-sphere for mesh objects.
+
+[02/12/2010]   0.3.80      josh       Created the html-to-text prototype for the Asgard spider.
+
+[05/27/2010]   0.3.81      josh       Added the 2d animation test TGA textures.
+
+[05/27/2010]   0.3.82      josh       Made a bug fix and addition to the OpenGL status settings in the canvas system.
+
+[05/27/2010]   0.3.83      josh       Patched some issues with nomenclature with the GUI button widget.
+
+[05/27/2010]   0.3.84      josh       Added glLineWidth() to the OpenGL wrapper API.
+
+[05/27/2010]   0.3.85      josh       Temporarily patched the GUI widget unit test to show the 2d animation system.
+
+[05/27/2010]   0.3.86      josh       Added some additional definitions to the macros core library.
+
+[05/27/2010]   0.3.87      josh       Added a new time macro to the os time library.
+
+[05/27/2010]   0.3.88      josh       Created the 2d engine package.
+
+[05/27/2010]   0.3.89      josh       Created the 2d animation system.
+
+[06/04/2010]   0.3.90      josh       Added memory-caching (i.
+
+[06/04/2010]   0.3.91      josh       e.
+
+[06/04/2010]   0.3.92      josh       the memcache) technology to the memory-wrapping functions, and added a minor addition to the memory unit test.
+
+[06/04/2010]   0.3.93      josh       \ Adjusted the animation frame rate in the asgard engine GUI widget test application.
+
+[06/04/2010]   0.3.94      josh       Patched compiler issues withthe core memory wrapper library.
+
+[06/04/2010]   0.3.95      josh       Enhanced the include structure in the Linux mutex wrapper to work correctly with the memory management system.
+
+[12/10/2010]   0.3.96      josh       Created the asgard mozilla firefox plugin.
+
+[12/10/2010]   0.3.97      josh       Updated the core OS API to include initialization on an existing window.
+
+[12/10/2010]   0.3.98      josh       Updated the core Win32 API to include initialization on an existing window.
+
+[12/10/2010]   0.3.99      josh       Patched a bug in the engine common header file for C++ inclusion.
+
+[12/10/2010]   0.4.00      josh       Enhanced the multi-threaded engine to initialize on an existing window.
+
+[12/10/2010]   0.4.01      josh       Patched some compiler complaints in the WfObj library.
+
+[12/10/2010]   0.4.02      josh       Updated the unit tests to comply with the new engine API.
+
+[12/10/2010]   0.4.03      josh       Added a MSVS 2008 compliance patch to the file i/o API.
+
+[12/10/2010]   0.4.04      josh       Patched some compiler complaints in the memory system.
+
+[12/10/2010]   0.4.05      josh       Patched some compiler complaints in the windows system library.
+
+[12/10/2010]   0.4.06      josh       Created the Mozilla Firefox plug-in.
+
+[12/10/2010]   0.4.07      josh       Updated the MSVS project files.
+
+[12/11/2010]   0.4.08      josh       Added build directory for the asgard firefox plug-in.
+
+[12/21/2010]   0.4.09      josh       Updated the copyright notice for the project source code and ancillary files.
+
+[12/21/2010]   0.4.10      josh       Updated the linux-API color-palette selection logic.
+
+[12/21/2010]   0.4.11      josh       Updated the Windows version.
+
+[12/21/2010]   0.4.12      josh       Updated the revision history.
+
+[12/23/2010]   0.4.13      josh       Created the 2d-engine camera system.
+
+[12/23/2010]   0.4.14      josh       Created the 2d-engine sprite system.
+
+[12/23/2010]   0.4.15      josh       Patched a typo in the 2d-engine frame-based animation system.
+
+[12/23/2010]   0.4.16      josh       Updated the main asgard engine header file.
+
+[12/23/2010]   0.4.17      josh       Updated the MSVS solution.
+
+[12/27/2010]   0.4.18      josh       Created the libz build for Win32 asgard.
+
+[12/27/2010]   0.4.19      josh       Patched the source to use the new configuration library standard stream handling functions.
+
+[12/27/2010]   0.4.20      josh       Updated the copyright notices in the asset configuration files.
+
+[12/27/2010]   0.4.21      josh       Created the common library standard-stream handling functions.
+
+[12/28/2010]   0.4.22      josh       Enhanced the texture blending determination logic.
+
+[12/28/2010]   0.4.23      josh       Updated the zlib header files to include the proper header by operating system.
+
+[12/28/2010]   0.4.24      josh       Created the zlib library API wrapper.
+
+[12/28/2010]   0.4.25      josh       Added the zlib library configuration header file for linux.
+
+[12/28/2010]   0.4.26      josh       Added missing makefile dependency files.
+
+[12/28/2010]   0.4.27      josh       Created the zlib library unit test.
+
+[12/28/2010]   0.4.28      josh       Updated the makefile configuration.
+
+[12/28/2010]   0.4.29      josh       Patched constants in the tmf and log libraries.
+
+[12/28/2010]   0.4.30      josh       Added the 64-bit linux zlib library.
+
+[12/28/2010]   0.4.31      josh       Added the zlib library to the MSVS configuration for each project.
+
+[12/28/2010]   0.4.32      josh       Patched the zlib library wrapper API to compile correctly on windows.
+
+[12/28/2010]   0.4.33      josh       Created the zlib library unit-test project.
+
+[12/28/2010]   0.4.34      josh       Corrected the broken asgard game engine basic unit test compiler configuration.
+
+[12/29/2010]   0.4.35      josh       Updated the makefile.
+
+[12/31/2010]   0.4.36      josh       Created the initial socket API.
+
+[12/31/2010]   0.4.37      josh       Created the initial linux-plugin for the socket API.
+
+[12/31/2010]   0.4.38      josh       Created the initial socket API unit test.
+
+[12/31/2010]   0.4.39      josh       Debugged and corrected some minor issues in the intial linux & socket implementations.
+
+[01/03/2011]   0.4.40      josh       Added some additional debuggin to the socket unit test.
+
+[01/03/2011]   0.4.41      josh       Fixed some minor data-access issues in the socket API wrapper.
+
+[01/03/2011]   0.4.42      josh       Verified that socket write sync works correctly.
+
+[02/22/2011]   0.4.43      josh       Updated the plugins to have the zlib headers for Mac OS X.
+
+[02/22/2011]   0.4.44      josh       Added the zlib libary for Mac OS X.
+
+[02/22/2011]   0.4.45      josh       Patched the entire core package to work on Mac OS X.
+
+[02/22/2011]   0.4.46      josh       Added sand rail sprite textures.
+
+[02/22/2011]   0.4.47      josh       Enhanced the 2d sprite system to use function pointers for mouse-event handling, game-play logic processing, and 2d rendering.
+
+[02/22/2011]   0.4.48      josh       Updated the asgard engine basic unit test to handle to new function API in the 2d sprite system.
+
+[02/24/2011]   0.4.49      josh       Created the 2d-engine unit test application & MSVS project.
+
+[02/24/2011]   0.4.50      josh       Created the makefile configuration for Mac OS X.
+
+[02/24/2011]   0.4.51      josh       Patched bug in the draw2d API with an invalid OpenGL constant was specified to 2d line drawing.
+
+[02/24/2011]   0.4.52      josh       Discovered an algorithm by which 2d items may be safely rotated.
+
+[02/26/2011]   0.4.53      josh       Enhanced the canvas system with OpenGL hints.
+
+[02/26/2011]   0.4.54      josh       Debugged and completed the 2d sprite system.
+
+[02/26/2011]   0.4.55      josh       Debugged and added new features to the 2d drawing API including rotations.
+
+[02/26/2011]   0.4.56      josh       Updated the 2d unit test to fully test the 2d drawing API.
+
+[03/01/2011]   0.4.57      josh       Updated the 2d and GUI widget unit tests for Asgard.
+
+[03/01/2011]   0.4.58      josh       Patched the button texture configurations to use blending.
+
+[03/07/2011]   0.4.59      josh       Created the 2d tile system.
+
+[03/07/2011]   0.4.60      josh       Patched an oversight on argument checking in the 2d sprite library.
+
+[03/07/2011]   0.4.61      josh       Created a texture for testing the 2d tile system.
+
+[03/07/2011]   0.4.62      josh       Added logic to the 2d engine unit-test to test the 2d tile system.
+
+[03/07/2011]   0.4.63      josh       Updated the MSVS solution to include the 2d tile system.
+
+[03/07/2011]   0.4.64      josh       Updated Asgard revision history.
+
+[03/14/2011]   0.4.65      josh       Added initial OpenAL & Ogg/Vorbis implementations.
+
+[03/15/2011]   0.4.66      josh       Completed the OpenAL plugin wrapper library.
+
+[03/15/2011]   0.4.67      josh       Completed the Ogg/Vorbis plugin wrapper library and CODEC plugin to OpenAL.
+
+[03/15/2011]   0.4.68      josh       Added the OpenAL test to the 2d unit test.
+
+[03/15/2011]   0.4.69      josh       Fixed several issues with the MSVS configuration.
+
+[03/15/2011]   0.4.70      josh       Fixed the LoadLibrary() call within the dl-wrapper library API.
+
+[03/15/2011]   0.4.71      josh       Added required DLLs for windows.
+
+[03/15/2011]   0.4.72      josh       Added the unit-test Ogg/Vorbis file.
+
+[03/15/2011]   0.4.73      josh       Added required 3rd-party libraries, including GLEW, OGG, OpenAL, and Vorbis.
+
+[03/23/2011]   0.4.74      josh       Added Mozilla Firefox includes.
+
+[03/30/2011]   0.4.75      josh       Patched compiler warnings in the 2d sprite, openal, wfobj game engine components.
+
+[03/30/2011]   0.4.76      josh       Added memory-function constants to the memory managment system for use when freeing things via an API.
+
+[03/30/2011]   0.4.77      josh       Created the array-list based upon the Java API type library and unit test.
+
+[03/30/2011]   0.4.78      josh       Added the SpiderMonkey libraries for Windows and Linux.
+
+[03/30/2011]   0.4.79      josh       Created the initial SpiderMonkey JavaScript engine wrapper for Asgard.
+
+[03/31/2011]   0.4.80      josh       Completed the initial integration of the SpiderMonkey JavaScript engine into Asgard.
+
+[03/31/2011]   0.4.81      josh       Optimized one of the Linux time calls.
+
+[03/31/2011]   0.4.82      josh       Created the script engine & unit-test, and removed the old prototype test application.
+
+[04/01/2011]   0.4.83      josh       Created the C and JavaScript towers-of-hanoi performance tests.
+
+[04/01/2011]   0.4.84      josh       Began adding native-context handling to the scripting engine system.
+
+[04/03/2011]   0.4.85      josh       Created the SpiderMonkey JavaScript engine library and unit-test build within MSVS for Asgard.
+
+[04/04/2011]   0.4.86      josh       Added the scripting engine types library.
+
+[04/04/2011]   0.4.87      josh       Updated the scripting engine to use types.
+
+[04/04/2011]   0.4.88      josh       Added the Mutex type and initial use functions to the native core library API.
+
+[04/04/2011]   0.4.89      josh       Updated MSVS project files.
+
+[04/04/2011]   0.4.90      josh       Added native constant & variable interface to the scripting engine.
+
+[04/05/2011]   0.4.91      josh       Created the initial asgard native javascript API.
+
+[04/05/2011]   0.4.92      josh       Completed the constants system.
+
+[04/05/2011]   0.4.93      josh       Created the native variable exchange system.
+
+[04/05/2011]   0.4.94      josh       Added the signal-handling library.
+
+[04/06/2011]   0.4.95      tom        Added Checkbox Gui Widget.
+
+[04/06/2011]   0.4.96      josh       Patched minor typos & compiler warnings in the 2d GUI CheckBox widget.
+
+[04/06/2011]   0.4.97      josh       Completed the system of system-call functions in the scripting engine.
+
+[04/06/2011]   0.4.98      josh       Updated the smtest.
+
+[04/06/2011]   0.4.99      josh       js to reflect the updated API.
+
+[04/06/2011]   0.5.00      josh       Updated makefile project dependencies and created the new makefiles for the forensic daemon.
+
+[04/06/2011]   0.5.01      josh       Created the initial forensic daemon application.
+
+[04/06/2011]   0.5.02      josh       Created a compile script for the forensic daemon application for use with Apache.
+
+[04/06/2011]   0.5.03      josh       Added config-file reading to the forensic daemon.
+
+[04/06/2011]   0.5.04      josh       Created the cvsup shell script.
+
+[04/06/2011]   0.5.05      josh       Created the default forensic daemon configuration file.
+
+[04/06/2011]   0.5.06      josh       Updated revision history and project versioning.
+
+[04/06/2011]   0.5.07      tom        Added autoscroll.
+
+[04/06/2011]   0.5.08      tom        h and .
+
+[04/06/2011]   0.5.09      tom        c Reordered functions in checkbox.
+
+[04/06/2011]   0.5.10      tom        h and .
+
+[04/06/2011]   0.5.11      tom        c.
+
+[04/07/2011]   0.5.12      josh       Patched the C errors and compiler warnings in the GUI AutoScroll widget.
+
+[04/07/2011]   0.5.13      josh       Completed the initial forensic-daemon multi-threaded application development, and forensic-log parsing.
+
+[04/07/2011]   0.5.14      tom        Completed autoscroll gui widget, but commented out all code adding it to asgard.
+
+[04/07/2011]   0.5.15      tom        h and asgardEngineGuiWidget_unitTest because of errors.
+
+[04/08/2011]   0.5.16      josh       Added the Asgard core system thread API to the native script API.
+
+[04/08/2011]   0.5.17      tom        Began adding textbox widget.
+
+[04/08/2011]   0.5.18      tom        added textbox files to project.
+
+[04/08/2011]   0.5.19      josh       Updated the MSVS project solution configuration.
+
+[04/08/2011]   0.5.20      josh       Patched a minor error-state checking bug in the Windows signal-handling library.
+
+[04/08/2011]   0.5.21      josh       Patched a typo when calling a non-platform-independant API in the scripting engine function library.
+
+[04/08/2011]   0.5.22      josh       Patched the towers-of-hanoi unit test to use the new scripting engine API.
+
+[04/08/2011]   0.5.23      josh       Altered the scripting engine test application to adhere to a signal usage compatible with Windows.
+
+[04/08/2011]   0.5.24      josh       Updated makefile configuration.
+
+[04/08/2011]   0.5.25      josh       Patched (Linux, gcc) compiler errors on the asgard TextBox GUI widget.
+
+[04/12/2011]   0.5.26      josh       Updated the file handling system to check for EOF conditions on all file reads.
+
+[04/12/2011]   0.5.27      josh       Made a devleopment pass on the forensic daemon to add access file reading.
+
+[04/12/2011]   0.5.28      tom        Completed Textbox code, and added to GUI widget unit test.
+
+[04/12/2011]   0.5.29      tom        Needs debug work done to ensure unit test functions as intended.
+
+[04/13/2011]   0.5.30      josh       Patched string-handling functions to use strxpndcat() in memory instead.
+
+[04/13/2011]   0.5.31      josh       Finished the first-pass of the forensic daemon.
+
+[04/13/2011]   0.5.32      tom        Corrected issues with textbox gui widget.
+
+[04/14/2011]   0.5.33      josh       Patched linux-compiler warnings with the GUI TextBox widget, and made some minor compliance changes to cross-platform C development.
+
+[04/15/2011]   0.5.34      josh       Updated the makefile project dependencies.
+
+[04/15/2011]   0.5.35      josh       Completed the initial core socket (Linux) API and unit-test.
+
+[05/24/2011]   0.5.36      josh       Completed the Windows socket plug-in for the Asgard core library.
+
+[06/21/2011]   0.5.37      josh       Added additional wrapper-functions to the core string library.
+
+[06/21/2011]   0.5.38      josh       Added missing 'free' function to the core system socket API.
+
+[06/21/2011]   0.5.39      josh       Patched boolean logic in the linux & windows socket plug-ins.
+
+[06/21/2011]   0.5.40      josh       Created the core library network package.
+
+[06/21/2011]   0.5.41      josh       Created the core library network protocols package.
+
+[06/21/2011]   0.5.42      josh       Created the core library HTTP network protocol.
+
+[06/21/2011]   0.5.43      josh       Created the core library HTTP network protocol unit test.
+
+[06/21/2011]   0.5.44      josh       Added a helper function for retreiving errors to the core library file i/o API.
+
+[06/21/2011]   0.5.45      josh       Updated the Asgard MSVS project configuration with the new HTTP network protocols.
+
+[06/21/2011]   0.5.46      josh       Patched several MSVS compiler warnings and missing function calls.
+
+[07/13/2011]   0.5.47      josh       Patched a bug in the ctype library number-recognition.
+
+[07/13/2011]   0.5.48      josh       Enhanced the HTTP protocol API.
+
+[07/13/2011]   0.5.49      josh       Added the abilito for the JSON library to parse encoded JSON object strings into the internal data format.
+
+[07/13/2011]   0.5.50      josh       Added the ability for the memory system to do direct native free() calls.
+
+[07/13/2011]   0.5.51      josh       Patched the logging system to bypass memory-free and using native free().
+
+[07/13/2011]   0.5.52      josh       Patched some minor bugs in the socket plugins.
+
+[07/13/2011]   0.5.53      josh       Created the Xpath type library for parsing, building, editing, and examining XML.
+
+[07/13/2011]   0.5.54      josh       Created the BeyBlade Battles load-test application.
+
+[07/13/2011]   0.5.55      josh       Updated the set of generated makefiles.
+
+[07/14/2011]   0.5.56      josh       Made a number of minor patches to the Windows version to conform to the updates from the recent development on Linux.
+
+[08/11/2011]   0.5.57      josh       Added the HTTP protocol unit-test MSVS project to CVS.
+
+[08/11/2011]   0.5.58      josh       Patched the dl unit-test to work correctly on Windows.
+
+[08/26/2011]   0.5.59      josh       Patched the canvas system's opengl commands to work with modern ATI cards.
+
+[08/26/2011]   0.5.60      josh       Enhanced the window-positioning logic in the Win32 API.
+
+[08/26/2011]   0.5.61      josh       Enhanced the rendering-mode capability for the WfObj plugin.
+
+[08/26/2011]   0.5.62      josh       Enhanced the rendering modes of the WfObj unit test.
+
+[08/26/2011]   0.5.63      josh       Added poker assets.
+
+[08/26/2011]   0.5.64      josh       Created poker project.
+
+[08/26/2011]   0.5.65      josh       Created the poker game prototype application.
+
+[08/26/2011]   0.5.66      josh       Creatd the spinlock system and unit test.
+
+[08/26/2011]   0.5.67      josh       Enhanced the spinlock unit test with performance and multi-threaded unit tests.
+
+[08/29/2011]   0.5.68      josh       Added the spinlock system to the Windows build system for MSVS and created the project for the spinlock unit-test.
+
+[08/30/2011]   0.5.69      josh       Updated the memory managment systme to be able to bypass the memcache system, and enhanced the memor unit-test framework.
+
+[08/30/2011]   0.5.70      josh       Patched the Windows build environment to support the memory management memcache bypass.
+
+[09/01/2011]   0.5.71      josh       Added an externally-definable complex-free function to the b+tree API.
+
+[09/01/2011]   0.5.72      josh       Added a performance test to the b+tree unit test suite.
+
+[09/01/2011]   0.5.73      josh       Enhanced the multithreaded spinlock unit-test to test spinlocks versus mutexes.
+
+[09/01/2011]   0.5.74      josh       Created the managed-index type library.
+
+[09/01/2011]   0.5.75      josh       Created the managed-index type library unit test.
+
+[09/01/2011]   0.5.76      josh       Created the Windows build system - MSVS project - for the managed index unit test.
+
+[09/01/2011]   0.5.77      josh       Patched the managed index types library to work correctly on Windows.
+
+[09/16/2011]   0.5.78      josh       Created the Villa Group statistics processing utlity.
+
+[09/16/2011]   0.5.79      josh       Patched typo in the not-case-sensitive string-comparison macro.
+
+[10/04/2011]   0.5.80      josh       Created transaction management system.
+
+[10/04/2011]   0.5.81      josh       Created transaction management system unit test application.
+
+[10/04/2011]   0.5.82      josh       Patched typo in the os-library's dynamic library loading API.
+
+[10/04/2011]   0.5.83      josh       Added the transaction management system to the networking library.
+
+[10/05/2011]   0.5.84      josh       Completed the initial transaction management system and unit test.
+
+[10/06/2011]   0.5.85      josh       Created the initial implementation of the network server API.
+
+[10/06/2011]   0.5.86      josh       Completed featureset in the transaction manager.
+
+[10/06/2011]   0.5.87      josh       Added helper functions to the log utility API.
+
+[10/06/2011]   0.5.88      josh       Added helper functions to the system thread management framework API.
+
+[10/06/2011]   0.5.89      josh       Patched the library API.
+
+[10/06/2011]   0.5.90      josh       Added helper functions to the socket API.
+
+[10/07/2011]   0.5.91      josh       Completed the majority of the functionality for the multithreaded server.
+
+[10/07/2011]   0.5.92      josh       Patched a number of issues in the transaction manager.
+
+[10/07/2011]   0.5.93      josh       Patched output for the thread ID in the log system output.
+
+[10/07/2011]   0.5.94      josh       Updated mutexing model in the socket library.
+
+[10/07/2011]   0.5.95      josh       Added a helper function to the socket library to request a socket shutdown.
+
+[10/07/2011]   0.5.96      josh       Added free function to the linux socket plugin.
+
+[10/07/2011]   0.5.97      josh       Free extraneous memory in the socket unit test.
+
+[10/08/2011]   0.5.98      josh       Performed cleanup & sanity checks of all core components & unit test with valgrind, and fixed a variety of issues.
+
+[10/08/2011]   0.5.99      josh       Added missing functionality to a number of core systems.
+
+[10/08/2011]   0.6.00      josh       Patched all code to work correctly on windows, added the transaction manager and server libraries to MSVS.
+
+[10/08/2011]   0.6.01      josh       Sanity checked all performance of code vetted on Linux.
+
+[10/08/2011]   0.6.02      josh       Added logging system to the transaction manager.
+
+[10/08/2011]   0.6.03      josh       Added a number of log messages to the transaction manager.
+
+[10/08/2011]   0.6.04      josh       Added error recording and reporting system to the transaction manager.
+
+[10/08/2011]   0.6.05      josh       Updated the transaction manager unit test.
+
+[10/08/2011]   0.6.06      josh       Used error messages from the transaction manager to update internal tracking in the server.
+
+[10/08/2011]   0.6.07      josh       Updated the server unit test.
+
+[10/08/2011]   0.6.08      josh       Patched mutex-model in the socket API for closing child sockets.
+
+[10/08/2011]   0.6.09      josh       Updated revision history.
+
+[10/10/2011]   0.6.10      josh       Added a subsystem to the windows thread plugin to track each handle created when spawning threads.
+
+[10/13/2011]   0.6.11      josh       Added a number of new functions to the network server API, and patched some threading issues and memory leaks.
+
+[10/13/2011]   0.6.12      josh       Added a number of new functions to the transaction manager API, and patched some threading issues and memory leaks.
+
+[10/13/2011]   0.6.13      josh       Enhanced the server and transaction manager unit tests.
+
+[10/13/2011]   0.6.14      josh       Added new functions to the TMF API.
+
+[10/13/2011]   0.6.15      josh       Enhanced the arraylist API.
+
+[10/13/2011]   0.6.16      josh       Enhanced the socket API.
+
+[10/13/2011]   0.6.17      josh       Patched memory allocation behavior in the linux thread plugin.
+
+[10/17/2011]   0.6.18      josh       Completed the transaction manager and server systems.
+
+[10/18/2011]   0.6.19      josh       Added helper function to the file API.
+
+[10/18/2011]   0.6.20      josh       Patched logic issue in the server system.
+
+[10/18/2011]   0.6.21      josh       Created the managed-array of 32-bit integers API & unit-test.
+
+[10/18/2011]   0.6.22      josh       Created the low-fragmentation block-cache API and unit-test.
+
+[10/19/2011]   0.6.23      josh       Created the 32-bit integer intersection API library.
+
+[10/19/2011]   0.6.24      josh       Created the 32-bit integer intersection API library unit test.
+
+[10/19/2011]   0.6.25      josh       Created the 32-bit integer ranged-index API library.
+
+[10/19/2011]   0.6.26      josh       Created the 32-bit integer ranged-index API library unit test.
+
+[10/19/2011]   0.6.27      josh       Completed the low-fragmentation block-cache system with various upgrades & enhancements, including an enhanced unit-test.
+
+[10/19/2011]   0.6.28      josh       Enhanced the 32-bit integer array API library with additional helper functions.
+
+[10/19/2011]   0.6.29      josh       Upgraded the 32-bit integer array API library unit test.
+
+[10/19/2011]   0.6.30      josh       Started building the httpd server by creating the package, and main package header file.
+
+[10/19/2011]   0.6.31      josh       Created the httpd common API library.
+
+[10/20/2011]   0.6.32      josh       Created MSVS project for the arraylist type library.
+
+[10/20/2011]   0.6.33      josh       Created MSVS project for the integer type library.
+
+[10/20/2011]   0.6.34      josh       Created MSVS project for the intersect type library.
+
+[10/20/2011]   0.6.35      josh       Created MSVS project for the range-index type library.
+
+[10/20/2011]   0.6.36      josh       Patched the integer type library to compile & execute correctly on Windows.
+
+[10/20/2011]   0.6.37      josh       Patched the range-index type library to compile & execute correctly on Windows.
+
+[10/20/2011]   0.6.38      josh       Updated makefiles, revision history.
+
+[10/20/2011]   0.6.39      josh       Updated date-stamp format for the revision history notes output.
+
+[10/21/2011]   0.6.40      josh       Enhanced the CVS wrapper script to take directory arguments.
+
+[10/21/2011]   0.6.41      josh       Enhanced logic in the integer-array library.
+
+[10/21/2011]   0.6.42      josh       Created the wildcard-index library to support the creation and searching of indexes for wildcard strings.
+
+[10/21/2011]   0.6.43      josh       Created the wildcard-index library unit-test.
+
+[10/26/2011]   0.6.44      josh       Added string-display function to the common API library.
+
+[10/26/2011]   0.6.45      josh       Created the English Stemming Algorithm (ESA) implementation in the core types library.
+
+[10/26/2011]   0.6.46      josh       Created the English Stemming Algorithm (ESA) unit test application.
+
+[10/26/2011]   0.6.47      josh       Created the search engine package.
+
+[10/26/2011]   0.6.48      josh       Created the search engine core package.
+
+[10/26/2011]   0.6.49      josh       Created the search-engine entity & container core component, with memory fragmentation optimization and thread-safe iteration.
+
+[10/26/2011]   0.6.50      josh       Created the search-engine entity & container unit test.
+
+[10/28/2011]   0.6.51      josh       Added string-to-tokens function to the string library API.
+
+[10/28/2011]   0.6.52      josh       Added is-vowel function to the core library ctypes API.
+
+[10/28/2011]   0.6.53      josh       Patched a bug in the range-index system.
+
+[10/28/2011]   0.6.54      josh       Patched logic in the container system.
+
+[10/28/2011]   0.6.55      josh       Created the common API library for the search engine.
+
+[10/28/2011]   0.6.56      josh       Created the common API library unit test.
+
+[10/28/2011]   0.6.57      josh       created the index-registry unit test.
+
+[10/28/2011]   0.6.58      josh       Created the search engine system package.
+
+[10/28/2011]   0.6.59      josh       Created the serach engine search-index library.
+
+[10/28/2011]   0.6.60      josh       Created the serach engine search-index unit test.
+
+[11/05/2011]   0.6.61      josh       Enhanced the intersection library API with a static array-assignment helper function.
+
+[11/05/2011]   0.6.62      josh       Enhanced the reporting logic on the spinlock locking failure.
+
+[11/05/2011]   0.6.63      josh       Radically enhanced the container system with type conversions and fixes.
+
+[11/05/2011]   0.6.64      josh       Enhanced the index registry API with a to-string on the index types.
+
+[11/05/2011]   0.6.65      josh       Enhanced the search index management system with index keys and element names.
+
+[11/05/2011]   0.6.66      josh       Created the initial search-engine system, with complete put & get logic.
+
+[11/05/2011]   0.6.67      josh       Created the initial search-engine system unit test.
+
+[11/07/2011]   0.6.68      josh       Created the search-engine daemon.
+
+[11/07/2011]   0.6.69      josh       Commented-out some extraneous messages from the network server.
+
+[11/07/2011]   0.6.70      josh       Enhanced the HTTP protocol library with helper functions compatible with the transaction manager.
+
+[11/07/2011]   0.6.71      josh       Patched a bug in the JSON API where objects within an array were not serialized correctly.
+
+[11/07/2011]   0.6.72      josh       Added new functionality to the search container system to convert a container to JSON.
+
+[11/07/2011]   0.6.73      josh       Added new functionality to the search container system to convert a JSON object to a container.
+
+[11/07/2011]   0.6.74      josh       Enhanced the search container system unit-test to test the new conversion logic.
+
+[11/07/2011]   0.6.75      josh       Created the search engine daemon default configuration file.
+
+[11/07/2011]   0.6.76      josh       Enhanced the config file utility API with a function to obtain big integers.
+
+[11/07/2011]   0.6.77      josh       Added config-file reading logic to the search engine daemon.
+
+[11/07/2011]   0.6.78      josh       Updated makefile.
+
+[11/22/2011]   0.6.79      josh       Updated the default search engine daemon configuration file.
+
+[11/22/2011]   0.6.80      josh       Added functionality to the search-engine to iterate through existing index-types & update each domain index.
+
+[11/22/2011]   0.6.81      josh       Added functionality to the search-engine to provide domain-based numeric-range search.
+
+[11/22/2011]   0.6.82      josh       Added functionality to the search-engine to plug numeric-range search logic into daemon action.
+
+[11/22/2011]   0.6.83      josh       Added functionality to the search-engine to read the updated server config file.
+
+[11/22/2011]   0.6.84      josh       Added functionality to the search-engine to perform server get-status functionality & message handler.
+
+[11/22/2011]   0.6.85      josh       Cleaned-up debug & developer-level reporting & display logic in the search engine.
+
+[11/22/2011]   0.6.86      josh       Added functionality to the search-engine to optimize global wildcard & exact search.
+
+[11/22/2011]   0.6.87      josh       Added functionality to the search-engine to optimize global numeric-range search.
+
+[11/22/2011]   0.6.88      josh       Added functionality to the search-engine to plug global wildcard & exact search into daemon action.
+
+[11/22/2011]   0.6.89      josh       Added functionality to the search-engine to plug global numeric-range search into daemon action.
+
+[11/22/2011]   0.6.90      josh       Added functionality to the search-engine to streamline logic dealing with container index removal.
+
+[11/22/2011]   0.6.91      josh       Added functionality to the search-engine to create server-index background thread system.
+
+[11/22/2011]   0.6.92      josh       Added functionality to the search-engine to server-index snapshot file creation.
+
+[11/22/2011]   0.6.93      josh       Added new API function to the core types library range-index for search types.
+
+[11/22/2011]   0.6.94      josh       Created the Asgard scripting engine binary for command-line execution.
+
+[11/23/2011]   0.6.95      josh       Patched invalid API access in the LFBC types library and the search engine daemon.
+
+[11/23/2011]   0.6.96      josh       Added function to the search engine API to create a snapshot file.
+
+[11/23/2011]   0.6.97      josh       Enhanced the search engine to perform snapshot file loading.
+
+[11/23/2011]   0.6.98      josh       Added a function to the search engine API to load a snapshot file.
+
+[11/23/2011]   0.6.99      josh       Added logic to the search engine background thread to iterate and execute commands from the queue.
+
+[11/23/2011]   0.7.00      josh       Added logic to the search engine to support excluded word lists.
+
+[11/23/2011]   0.7.01      josh       Created a stress-test function for the search engine unit test.
+
+[11/23/2011]   0.7.02      josh       Enhanced the search engine unit test to support the new API changes in the search engine.
+
+[11/23/2011]   0.7.03      josh       Patched the core networking library HTTP protocol to report the number of bytes sent on a socket to the transaction manager.
+
+[11/23/2011]   0.7.04      josh       Patched a double-free bug in the global string search in the search engine.
+
+[11/29/2011]   0.7.05      josh       Created the detaulf excluded word list for the search engine.
+
+[11/29/2011]   0.7.06      josh       Updated the default search engine configuration file with the various new daemon properties.
+
+[11/29/2011]   0.7.07      josh       Added display function to the core utilty configuration file library API.
+
+[11/29/2011]   0.7.08      josh       Added file-writing function to the core utilty configuration file library API.
+
+[11/29/2011]   0.7.09      josh       Added put Boolean property function to the core utilty configuration file library API.
+
+[11/29/2011]   0.7.10      josh       Added put Integer property function to the core utilty configuration file library API.
+
+[11/29/2011]   0.7.11      josh       Added put Big Integer property function to the core utilty configuration file library API.
+
+[11/29/2011]   0.7.12      josh       Added put Double property function to the core utilty configuration file library API.
+
+[11/29/2011]   0.7.13      josh       Added put string property function to the core utilty configuration file library API.
+
+[11/29/2011]   0.7.14      josh       Added functions to the core memory library to conver integers, big integers, and doubles to strings.
+
+[11/29/2011]   0.7.15      josh       Added configuration-file logic to load the settings for the new API functions provided by the search engine system to the search engine daemon.
+
+[11/29/2011]   0.7.16      josh       Added memory cleanup logic to the search engine daemon.
+
+[11/29/2011]   0.7.17      josh       Added logic to prevent an invalid memcpy() in the container serialization logic.
+
+[11/29/2011]   0.7.18      josh       Added a string-to-type helper function to the search engine core index registry library.
+
+[11/29/2011]   0.7.19      josh       Fixed a few minor bugs in the search engine logic.
+
+[11/29/2011]   0.7.20      josh       Created new API functions to access the reading & writing of the state as well as state-backup setings.
+
+[11/29/2011]   0.7.21      josh       Added logic to the search engine to support reading & writing of the registry, domains, and settings.
+
+[11/29/2011]   0.7.22      josh       Updated the search engine unit test to take advantage of the state-backup API in the search engine.
+
+[11/30/2011]   0.7.23      josh       Updated std-stream bypass for the core JSON types library and the configuration file utility library.
+
+[11/30/2011]   0.7.24      josh       Added system for parsing & using command line arguments for the search engine daemon.
+
+[11/30/2011]   0.7.25      josh       Patched the std-stream bypass in the search engine system.
+
+[12/03/2011]   0.7.26      josh       Added some simple helper c-string functions to the core ctypes library.
+
+[12/03/2011]   0.7.27      josh       Added a helper function to the JSON types library API to determine if an element exists.
+
+[12/03/2011]   0.7.28      josh       Updated the signal-handling system to output directly to the current stream.
+
+[12/03/2011]   0.7.29      josh       Enhanced the search engine daemon to consider string-types for the indexType parameter for the newIndex action.
+
+[12/03/2011]   0.7.30      josh       Enhanced the search engine daemon to initiate shutdown on a termination signal.
+
+[12/03/2011]   0.7.31      josh       Added sort logic to the search action for the search engine daemon.
+
+[12/03/2011]   0.7.32      josh       Added offset & limit logic to the returned result set for the search engine daemon.
+
+[12/03/2011]   0.7.33      josh       Added unit-test text file for the search engine unit test.
+
+[12/03/2011]   0.7.34      josh       Created visual studio project for the commont unit test.
+
+[12/03/2011]   0.7.35      josh       Created visual studio project for the container unit test.
+
+[12/03/2011]   0.7.36      josh       Created visual studio project for the ESA unit test.
+
+[12/03/2011]   0.7.37      josh       Created visual studio project for the index-registry unit test.
+
+[12/03/2011]   0.7.38      josh       Created visual studio project for the LFBC unit test.
+
+[12/03/2011]   0.7.39      josh       Created visual studio project for the search-engine library.
+
+[12/03/2011]   0.7.40      josh       Created visual studio project for the search engine unit test.
+
+[12/03/2011]   0.7.41      josh       Created visual studio project for the server unit test.
+
+[12/03/2011]   0.7.42      josh       Created visual studio project for the transaction manager unit test.
+
+[12/03/2011]   0.7.43      josh       Created visual studio project for the wildcard index unit test.
+
+[12/03/2011]   0.7.44      josh       Created visual studio project for the xpath unit test.
+
+[12/03/2011]   0.7.45      josh       Updated the configuration of the visual studio project for the core asgard library.
+
+[12/03/2011]   0.7.46      josh       Updated the configuration of the visual studio project for the HTTP protocol unit test.
+
+[12/03/2011]   0.7.47      josh       Updated the master visual studio project configuration.
+
+[12/03/2011]   0.7.48      josh       Patched a type conversino issue in the LFBC types library.
+
+[12/03/2011]   0.7.49      josh       Performed initial pass to enable Asgard to be compile by MinGW.
+
+[12/06/2011]   0.7.50      josh       Added makefile configuration for MinGW.
+
+[12/06/2011]   0.7.51      josh       Created MinGW zlib build, patched climits and the socket plugin to compile correctly on MinGW.
+
+[12/06/2011]   0.7.52      josh       Built zlib for MinGW.
+
+[12/06/2011]   0.7.53      josh       Moved the wowstats project to the legacy C source directory.
+
+[12/06/2011]   0.7.54      josh       Reorganized standalone applications.
+
+[12/06/2011]   0.7.55      josh       Added logical comparison of string and string-arrays to the common string library.
+
+[12/17/2011]   0.7.56      josh       Created the string-comparison prototype application.
+
+[12/17/2011]   0.7.57      josh       Patched the common string library with string and string-array distance-comparison functions.
+
+[12/17/2011]   0.7.58      josh       Updated the search engine unit test to perform distance tests on test data-sets.
+
+[12/17/2011]   0.7.59      josh       Added some additional string-comparison test data.
+
+[12/27/2011]   0.7.60      josh       Created string-comparison-distance function in the common string library.
+
+[12/27/2011]   0.7.61      josh       Created string-array-comparison-distance function in the common string library.
+
+[12/27/2011]   0.7.62      josh       Patched the container library with logic to not include relevancy attributes in JSON conversion.
+
+[12/27/2011]   0.7.63      josh       Added a new function to the container library to determine if an attribute exists.
+
+[12/27/2011]   0.7.64      josh       Added background relevancy calculation logic to the search engine thread.
+
+[12/27/2011]   0.7.65      josh       Added relevancy sort logic to the search engine.
+
+[01/03/2012]   0.7.66      josh       Added a socket API to the scripting engine.
+
+[01/06/2012]   0.7.67      josh       Updated configuration unit test file.
+
+[01/06/2012]   0.7.68      josh       Updated the project asgard solution.
+
+[01/06/2012]   0.7.69      josh       Added new functionality for windows compatibility to the unit-test execution script.
+
+[01/18/2012]   0.7.70      josh       Created the particle engine for the Asgard game engine.
+
+[01/18/2012]   0.7.71      josh       Created the unit test application and MSVS project for the particle engine.
+
+[01/18/2012]   0.7.72      josh       Updated the MSVS project configuration.
+
+[01/18/2012]   0.7.73      josh       Created the initial set of particle textures for the Asgard game engine asset library.
+
+[01/19/2012]   0.7.74      josh       Created the 2D physics engine for the Asgard game engine.
+
+[01/25/2012]   0.7.75      josh       Fixed error message typo in the HTTP protocol.
+
+[01/25/2012]   0.7.76      josh       Fixed a potential memory overrun issue in the core intersection library.
+
+[01/25/2012]   0.7.77      josh       Enhanced error message formatting in the search engine daemon.
+
+[01/25/2012]   0.7.78      josh       Added 'update' message to the search engine daemon.
+
+[01/25/2012]   0.7.79      josh       Added 'delete' message to the search engine daemon.
+
+[01/25/2012]   0.7.80      josh       Updated the search engine daemon search functionality with the 'geocoord' mode.
+
+[01/25/2012]   0.7.81      josh       Added spinlock state checking and crash hardening to the search engine container.
+
+[01/25/2012]   0.7.82      josh       Added spinlock state checking and crash hardening to the search engine index registry.
+
+[01/25/2012]   0.7.83      josh       Added spinlock state checking and crash hardening to the search engine.
+
+[01/25/2012]   0.7.84      josh       Added graceful background thread performance logic to the search engine's automated relevancy system.
+
+[01/25/2012]   0.7.85      josh       Enhanced the search engine with standardized error codes.
+
+[01/25/2012]   0.7.86      josh       Added geocoord search functionality to the search engine.
+
+[01/25/2012]   0.7.87      josh       Added geocoord search functionality to the search engine unit test.
+
+[02/09/2012]   0.7.88      josh       Enhanced the managed index system to allow for no-timeout entries.
+
+[02/09/2012]   0.7.89      josh       Enhanced the search engine to perform geographical distance sorting.
+
+[02/09/2012]   0.7.90      josh       Enhanced the search engine daemon to use the geographical distance sorting.
+
+[02/09/2012]   0.7.91      josh       Created the initial framework for the search engine's authentication system.
+
+[02/09/2012]   0.7.92      josh       Corrected return statements in the search engine container system for obtaining double values.
+
+[02/09/2012]   0.7.93      josh       Corrected TGA conversion issue in binary.
+
+[02/09/2012]   0.7.94      josh       Patched x & y speed calculation bug in the asgard 2d physics engine.
+
+[02/09/2012]   0.7.95      josh       Enhanced 2d sprite debug display.
+
+[02/09/2012]   0.7.96      josh       Patched compiler warning for the OGG/Vorbis wrapper library.
+
+[02/09/2012]   0.7.97      josh       Enhanced the 2d engine unit test with test modes, and added a 2d physics & camera to the sprite test.
+
+[02/09/2012]   0.7.98      josh       Updated the MinGW makefile.
+
+[02/16/2012]   0.7.99      josh       Patched the core library to compile correctly on Android, with new Android common header files, stacktrace, and logging.
+
+[02/16/2012]   0.8.00      josh       Wrote extensive set of plugins and conditional logic to allow the Asgard game engine to compile and work on Android, including the canvas system, event handling, the OS API, the OpenGL API, the font system, the texture engine, the WF OBJ plugin, and the Android native keys.
+
+[02/16/2012]   0.8.01      josh       Wrote wrapper logic for non-procedural rendering with OpenGL ES to allow the Asgard enginge's rendering pipeline to be compatible with Android and OpenGL ES.
+
+[02/16/2012]   0.8.02      josh       Patched compiler issues with the OpenGL plugin.
+
+[02/22/2012]   0.8.03      josh       Enhanced the Asgard game engine Android API with external event processing.
+
+[02/22/2012]   0.8.04      josh       Added a RGBA while color background to all rendered textures on the Android.
+
+[02/23/2012]   0.8.05      josh       Patched issues and added enhancements to the 2d physics engine.
+
+[02/23/2012]   0.8.06      josh       Created the Asgard game engine shell program for launching, developing and debugging the Asgard game engine.
+
+[02/23/2012]   0.8.07      josh       Created the initial Troids 2D video game.
+
+[02/23/2012]   0.8.08      josh       Created the space fighter 2D sprite.
+
+[02/23/2012]   0.8.09      josh       Created the Troids video game splash screen.
+
+[02/23/2012]   0.8.10      josh       Created the Troids video game night sky texture.
+
+[02/23/2012]   0.8.11      josh       Patched Asgard game engine Anroid API to support the various functions required by game development.
+
+[02/23/2012]   0.8.12      josh       Enhanced the troids game with additional functionality to support the Android API.
+
+[02/23/2012]   0.8.13      josh       Enhanced the troids game with a 3D background system.
+
+[02/23/2012]   0.8.14      josh       Created the Troids video game background texture.
+
+[02/23/2012]   0.8.15      josh       Created the Troids video game big asteroid texture.
+
+[02/23/2012]   0.8.16      josh       Updated the MSVS solution configuration.
+
+[02/23/2012]   0.8.17      josh       Completed the initial Troids game using the Asgard shell.
+
+[02/23/2012]   0.8.18      josh       Created the Asgard game engine shell MSVS project.
+
+[02/23/2012]   0.8.19      josh       Patched random number picking in the Troids game to work with Android.
+
+[02/23/2012]   0.8.20      josh       Created a new background & night sky textures for the Troids game.
+
+[02/24/2012]   0.8.21      josh       Enhanced the physics system with a reset function.
+
+[02/24/2012]   0.8.22      josh       Largely completed the Troids technology demonstration game, with scoring, collision modeling, game reset, etc.
+
+[02/24/2012]   0.8.23      josh       Fixed a number of minor bugs with the Troids game.
+
+[02/24/2012]   0.8.24      josh       Created the bullet system for the Troids game.
+
+[02/25/2012]   0.8.25      josh       Completed all main programming tasks, except for power-ups with the Troids game.
+
+[02/25/2012]   0.8.26      josh       Added 2d rectangular rotation to the draw2d API.
+
+[02/29/2012]   0.8.27      josh       Updated the splash screen.
+
+[02/29/2012]   0.8.28      josh       Created the bullet texture.
+
+[02/29/2012]   0.8.29      josh       Created a blue circle texture.
+
+[02/29/2012]   0.8.30      josh       Created the fighter outline texture.
+
+[02/29/2012]   0.8.31      josh       Created the game over screen texture.
+
+[02/29/2012]   0.8.32      josh       Added web-based asset downloads to the Troids game.
+
+[02/29/2012]   0.8.33      josh       Added a number of minor game tweaks to the Troids game.
+
+[02/29/2012]   0.8.34      josh       Patched the firefox plugin to play the Troids game.
+
+[02/29/2012]   0.8.35      josh       Updated the project asgard MSVS solution, including the libasgard, libasgard-firefox plugin and libasgard core libraries to compile for relase distribution.
+
+[02/29/2012]   0.8.36      josh       Completed all of the game logic for the Troids game.
+
+[02/29/2012]   0.8.37      josh       Created the missile, and gun, missile and shield powerup textures.
+
+[02/29/2012]   0.8.38      josh       Created the gun radius & sheild textures to the Troids game, fixed the gun-fire-radius bug, and added the new textures to the game.
+
+[03/01/2012]   0.8.39      josh       Patched & tweaked the game & animation logic for Troids.
+
+[03/03/2012]   0.8.40      josh       Added production artwork for the space fighter sprite for the Troids game.
+
+[03/03/2012]   0.8.41      josh       Added final production artwork for the Troids game textures.
+
+[03/03/2012]   0.8.42      josh       Completed final artwork import & programming for the Troids game.
+
+[03/03/2012]   0.8.43      josh       Updated assets with final art for Troids.
+
+[03/03/2012]   0.8.44      josh       Created gun targeting art for Troids.
+
+[03/03/2012]   0.8.45      josh       Created thruster variance art for Troids.
+
+[03/03/2012]   0.8.46      josh       Added gun targeting and enhanced play balancing for Troids.
+
+[03/03/2012]   0.8.47      josh       Added all final art for Troids.
+
+[03/03/2012]   0.8.48      josh       Completed the Troids initial game development.
+
+[03/03/2012]   0.8.49      josh       Added loading-screen hack for the Anrdoid platform.
+
+[03/15/2012]   0.8.50      josh       Added new asteroid positioning logic to the Troids game for new asteroid spawns.
+
+[03/15/2012]   0.8.51      josh       Completed some minor bug fixes and gameplay balancing logic with the Troids game.
+
+[03/15/2012]   0.8.52      josh       Altered the Asgard Shell to compile in the bin directory instead of the unit directory.
+
+[03/15/2012]   0.8.53      josh       Patched parsing issue in the JSON library where empty strings were not decoded correctly.
+
+[03/15/2012]   0.8.54      josh       Added logic to the common library to trim extraneous newlines from stdout & stderr messsages.
+
+[03/15/2012]   0.8.55      josh       Enhanced the JSON unit test to test for empty-string decoding issues.
+
+[03/15/2012]   0.8.56      josh       Patched the cotainer logic with additional JSON decoding logic as well as logic to exclude internal items - such as 'searchd_domainKey' from container-to-JSON logic.
+
+[03/15/2012]   0.8.57      josh       Added new function to the container library to display the contents of a given container.
+
+[03/15/2012]   0.8.58      josh       Enhanced the search engine daemon to support output of the contents of a container for a 'put' or 'update' command when in developer mode.
+
+[03/16/2012]   0.8.59      josh       Added summary-information lookup cability to the search index.
+
+[03/16/2012]   0.8.60      josh       Added the ability to use the search engine API to lookup index information for a given domain and index via the search-index system.
+
+[03/16/2012]   0.8.61      josh       Modified the range-index system to have its internal data object publicly visible so that the search-index system may reference it.
+
+[03/16/2012]   0.8.62      josh       Enhanced the search-index system with a stand-alone user-type index comprised of a b+tree with a singular interger-array for unique-user-defined-key access to a given container.
+
+[03/16/2012]   0.8.63      josh       Enhanced the search engine, registry, and index systems with the user-defined key system.
+
+[03/16/2012]   0.8.64      josh       Added the user-key and index-information logic to the search engine daemon.
+
+[03/22/2012]   0.8.65      josh       Patched the core common library to make use of the memory managment system.
+
+[03/22/2012]   0.8.66      josh       Patched the core string library to make use of the memory managment system.
+
+[03/22/2012]   0.8.67      josh       Enhanced the b+tree library to reference memory functions using the memory managment macros.
+
+[03/22/2012]   0.8.68      josh       Enhanced the logic of the wildcard indexing system's string normalization to make appropriate use of whitespace.
+
+[03/22/2012]   0.8.69      josh       Updated the wildcard index unit test to make sure that phrases can be created & searched upon correctly.
+
+[03/22/2012]   0.8.70      josh       Patched the log utility to make use of the memory managment API.
+
+[03/22/2012]   0.8.71      josh       Enhanced the macros and constants within the memory management library.
+
+[03/22/2012]   0.8.72      josh       Added new packages to the main search header file.
+
+[03/22/2012]   0.8.73      josh       Added new functionality to the search engine daemon to support index-summary and index-profiling when searching.
+
+[03/22/2012]   0.8.74      josh       Ported the existing search engine daemon's new-domain action to use the compiler & query engine.
+
+[03/22/2012]   0.8.75      josh       Consolidated additional common functionality in the seach engine common library by adding relevancy key and relevancy key-length helper functions as well as string-to-tokens.
+
+[03/22/2012]   0.8.76      josh       Created the search engine query compiler and execution engine.
+
+[03/22/2012]   0.8.77      josh       Enhanced the search engine to properly support exact-match queries.
+
+[03/22/2012]   0.8.78      josh       Added a new API to the search engine to support building the index summary for a given index within a domain.
+
+[03/22/2012]   0.8.79      josh       Enhanced the search index system to build index summaries for a given index.
+
+[03/22/2012]   0.8.80      josh       Created the sort library to consolidate all search engine sorting into a single API.
+
+[03/22/2012]   0.8.81      josh       Enhanced the search engine unit test to verify that exact-match searches work correctly.
+
+[03/23/2012]   0.8.82      josh       Updated default search engine daemon excluded-word list.
+
+[03/24/2012]   0.8.83      josh       Enhanced the search engine's string-update function by breaking out the string-update functionality into two helper functions, one for full-string update and one for wildcard-string update.
+
+[03/24/2012]   0.8.84      josh       Tuned the logic controlling string-update behavior for the search engine.
+
+[03/26/2012]   0.8.85      josh       Found one of the post-delimiter tests in tokenization is invalid for a reduced deliminter set that does not include a space.
+
+[03/28/2012]   0.8.86      josh       Updated the common macros from the core library to include casting a char to a signed integer.
+
+[03/28/2012]   0.8.87      josh       Updated the HTTP protocol's transaction-manager ID function to terminate URL parsing when reaching a '?' character.
+
+[03/28/2012]   0.8.88      josh       Ported the new-index, get, get-by-attribute, put, update, delete and search functions from the stand-alone JSON actions within the search engine daemon to be language-neutral and executable from the search compiler.
+
+[03/30/2012]   0.8.89      josh       Added 2 new helper functions to the core integer intersection library to display the contents of any given intersection object.
+
+[03/30/2012]   0.8.90      josh       Added additional logging to the search compiler to report on intersection times.
+
+[03/30/2012]   0.8.91      josh       Correct logic in the search compiler to properly perform relevancy & geocoord sorts.
+
+[03/30/2012]   0.8.92      josh       Added a new subsystem to the search engine global search API to Boolean OR together result-sets from differing domains and compositing the result for the user-specified intersection context.
+
+[04/03/2012]   0.8.93      josh       Enhanced the core intersection library to perform Boolean NOT intersections.
+
+[04/03/2012]   0.8.94      josh       Enhanced the intersection unit-test to perform strict tests of Boolean AND, NOT and OR intersections.
+
+[04/03/2012]   0.8.95      josh       Removed the remaining search-engine logic from the search engine daemon - including buildIndexSummary() and searchd_actionList() - with all functionality migrated to the search compiler & query engine.
+
+[04/03/2012]   0.8.96      josh       Added the "list" command to the search compiler.
+
+[04/03/2012]   0.8.97      josh       Added not-equal-to searching to the search compiler.
+
+[04/03/2012]   0.8.98      josh       Corrected multi-domain not-global searching logic within the search compiler.
+
+[04/03/2012]   0.8.99      josh       Enhanced the search engine API with search-not-list and search-not-list-global functions to obtain the set of UIDs for a given domain and index or a given global index for use with NOT intersections.
+
+[04/03/2012]   0.9.00      josh       Enhanced the search-index system to support obtaining all of the index-value UIDs for a given index.
+
+[04/04/2012]   0.9.01      josh       Added update-by-attribute to the search compiler and query engine.
+
+[04/04/2012]   0.9.02      josh       Added delete-by-attribute to the search compiler and query engine.
+
+[04/04/2012]   0.9.03      josh       Enhanced the search engine with logic to update a given container by a specified attribute.
+
+[04/04/2012]   0.9.04      josh       Enhanced the search engine with logic to delete a given container by a specified attribute and value.
+
+[04/04/2012]   0.9.05      josh       Patched logic with the search-engine's handling of updating geocoord search values.
+
+[04/05/2012]   0.9.06      josh       Patched intersection logic such that it correctly adds new arrays to the intersection context.
+
+[04/05/2012]   0.9.07      josh       Changed how the developer-mode reports information in the searchd.
+
+[04/05/2012]   0.9.08      josh       Enhanced the container system with a 'combine' function.
+
+[04/05/2012]   0.9.09      josh       Enhanced the container unit-test with combine-function testing.
+
+[04/05/2012]   0.9.10      josh       Enhanced SQL string normalization logic to be safe.
+
+[04/05/2012]   0.9.11      josh       Patched the multi-domain compilation logic so that it does not perform faulty intersections single-domain searches.
+
+[04/05/2012]   0.9.12      josh       Patched how the query engine compiler handles SQL compilation error reporting.
+
+[04/26/2012]   0.9.13      josh       Enhanced log utility with additional synchronization (flush) functionality.
+
+[04/26/2012]   0.9.14      josh       Added log flush to search engine daemon.
+
+[04/26/2012]   0.9.15      josh       Refactored the search engine's relevancy system.
+
+[04/26/2012]   0.9.16      josh       Refactored queued command system to handle PUTs and UPDATEs properly.
+
+[04/26/2012]   0.9.17      josh       Refactored the update-by-attribute system.
+
+[04/26/2012]   0.9.18      josh       Corrected stability and performance problems when under continuous and varied heavy load.
+
+[04/30/2012]   0.9.19      josh       Patched BeyBlade load test to use updated JSON API.
+
+[04/30/2012]   0.9.20      josh       Patched the forensic daemon to use the updated JSON API.
+
+[04/30/2012]   0.9.21      josh       Updated the JSON library's internal API to use a consistant naming convention.
+
+[04/30/2012]   0.9.22      josh       Added logic to cleanly create string representation's of the JSON data context.
+
+[04/30/2012]   0.9.23      josh       Added variable-checking logic to avoid error conditions during JSON string creation.
+
+[04/30/2012]   0.9.24      josh       Simplified JSON to-string API function.
+
+[04/30/2012]   0.9.25      josh       Created new JSON library API function to minimize JSON strings, including a flag for full network-optimization to reduce the number of bytes sent across a pipe.
+
+[04/30/2012]   0.9.26      josh       Updated the JSON unit test to validate the new API and updated internal structure.
+
+[04/30/2012]   0.9.27      josh       Added a new API function to the log library to flush the current stream.
+
+[04/30/2012]   0.9.28      josh       Enhanced mutex plugins for Linux and Windows to ignore 'socket_accept' locking error reporting.
+
+[04/30/2012]   0.9.29      josh       Enhanced the search engine daemon with selective log flushing, log flushing on shutdown, and logging in seperate files all JSON and SQL commands.
+
+[04/30/2012]   0.9.30      josh       Enhanced the search engine container internal handling of JSON-to-container logic to check the value of strings and ignore strings with invalid lengths.
+
+[04/30/2012]   0.9.31      josh       Enhanced the container unit test to use the update JSON API.
+
+[04/30/2012]   0.9.32      josh       Added logging to the search engine compiler for each executed action.
+
+[04/30/2012]   0.9.33      josh       Enhanced the serach engine compiler to avoid string duplicate of null domain name and index key values.
+
+[04/30/2012]   0.9.34      josh       Added additional logging to the search engine.
+

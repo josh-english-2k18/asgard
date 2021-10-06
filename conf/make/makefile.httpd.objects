@@ -1,0 +1,2 @@
+HTTPD_OBJS						= \
+		$(SRC_PATH)/c/httpd/core/httpd_common.o \

@@ -1,0 +1,7 @@
+SCRIPT_OBJS						= \
+		$(SRC_PATH)/c/script/common.o \
+		$(SRC_PATH)/c/script/debug.o \
+		$(SRC_PATH)/c/script/engine.o \
+		$(SRC_PATH)/c/script/functions.o \
+		$(SRC_PATH)/c/script/types.o \
+		$(SRC_PATH)/c/script/variables.o \

@@ -1,0 +1,257 @@
+Asgard - the next-generation application-development framework, design notes.
+
+Document History:
+
+1.0		-	08/15/2008	-	Initial document creation.
+
+1.1		-	09/15/2008	-	Updated document while performing initial
+							implemenation.
+
+1.2		-	10/06/2008	-	Added additiona plugin directories, began thinking
+							about restructuring to support a casual-game
+							development project.
+
+1.3		-	10/15/2008	-	Added unit tests, updated structure, combined and
+							repackaged core/core and core/system into
+							core/library, added additional library features.
+
+Notes:
+
+o need to determine if getenv/setenv is cross-platform, and determine an
+  implemenation path
+o use the memcached slab-based memory allocation model as inspiration for a
+  caching system's memory caching
+
+
+Structure:
+
++ bin
++ build
+	[reflects src directory]
++ conf
++ assets
++ doc
+| - + notes
+| - + design
++ lib
++ plugin
++ src
+| - + c
+	| - + core
+		| - + common
+			| - + plugin
+				| - o common_[*].h (common header files)
+				| - o dirent_windows.h/.c (posix DIR API for Win32)
+			| - o common.h
+			| - o macros.h
+			| - o string.h/.c (common string-protection functions & macros)
+			| - o version.h
+		| - + os
+			| - + plugin
+				| - o dl_[*].h/.c (dynamic library loading)
+				| - o time_[*].h/.c (time functions)
+			| - + unit
+				| - o dl_unitTest.c
+				| - o time_unitTest.c
+			| - o dl.h/.c (provide a dynamic library loading common api)
+			| - o time.h/.c (provide a time common api)
+			| - o types.h
+		| - + memory
+			| - + unit
+				| - o memory_unitTest.c
+			| - o memory.h/.c (default memory-wrapper)
+		| - + system
+			| - + plugin
+				| - o mutex_[*].h/.c (mutexing)
+				| - o thread_[*].h/.c (threading)
+				| - o system_[*].h/.c (system commands)
+				| - o signal_[*].h/.c (system commands)
+				| - o stacktrace_[*].h/.c (system commands)
+			| - + unit
+				| - o mutex_unitTest.c
+				| - o thread_unitTest.c
+				| - o system_unitTest.c
+				| - o signal_unitTest.c
+				| - o stacktrace_unitTest.c
+			| - o mutex.h/.c
+			| - o thread.h/.c
+			| - o system.h/.c (system commands, e.g. file delete, etc.)
+			| - o signal.h/.c
+			| - o stacktrace.h/.c
+		| - + library
+			| - + core
+				| - + unit
+					| - o ctype_unitTest.c
+					| - o error_unitTest.c
+					| - o endian_unitTest.c
+					| - o serialize_unitTest.c
+				| - o ctype.h/.c (ctype library)
+				| - o error.h/error.c
+				| - o endian.h/.c
+				| - o serialize.h/.c
+			| - + system
+				| - + plugin
+[NOT DONE]			| - o socket_[*].h/.c (sockets)
+				| - + unit
+					| - o file_unitTest.c
+				| - o dir.h/.c
+				| - o file.h/.c
+				| - o tmf.h/.c (thread management framework)
+[NOT DONE]		| - o socket.h/.c
+[NOT DONE]		| - o string.h/.c
+			| - + network
+[NOT DONE]		| - o client.h/.c (network client API)
+			| - + types
+				| - o bptree.h/.c
+[NOT DONE]		| - o linkedlist.h/.c
+				| - o fifostack.h/.c
+			| - + util
+				| - o config.h/.c
+				| - o crc32.h/.c
+[NOT DONE]		| - o http.h/.c (performs HTTP encoding/decoding)
+				| - o log.h/.c
+				| - o pfs.h/.c (function profiling system)
+				| - o sha1.h/.c
+			| - o library.h
+		| - + plugin
+			| - o zlib.h/.c
+		| - o core.h
+	| - + asgard (the OpenGL game engine)
+		| - + core
+			| - + plugin
+[OK]			| - o keys_[*].h (OS-specific key mappings)
+[OK]			| - o linuxapi.h/.c (the Linux API wrapper)
+[OK]			| - o opengl.h/.c (the OpenGL wrapper)
+[OK]			| - o win32api.h/.c (the Win32 API wrapper)
+			| - o asset_cache.h/.c
+[OK]		| - o canvas.h/.c
+[OK]		| - o colors.h
+[OK]		| - o common.h
+[OK]		| - o events.h/.c (OS, keyboard, mouse events)
+[OK]		| - o keys.h (key mappings)
+[OK]		| - o osapi.h/.c (OS Windowing & OpenGL API)
+			| - o [something for 2d].h/.c
+		| - + driver
+			| - o keyboard.h/.c
+			| - o mouse.h/.c
+		| - + effect
+			| - + pe (particle effects)
+				| - o explosion.h/.c
+				| - o fire.h/.c
+			| - o fog.h/.c
+			| - o light.h/.c
+			| - o particle.h/.c
+			| - o particle_engine.h/.c
+			| - o position_reference.h/.c
+			| - o shadow_projection.h/.c
+		| - + engine
+			| - + plugin
+[OK]			| - o font_[*].h/.c (the OS-specific TTF system)
+[OK]			| - o targa.h/.c (Targa image file loading)
+			| - o animation2d.h/.c
+			| - o animation3d.h/.c
+			| - o billboard.h/.c
+			| - o camera.h/.c
+[OK]		| - o font.h/.c
+[OK]		| - o texture.h/.c
+			| - o hud.h/.c
+			| - o static_mesh.h/.c
+			| - o skybox.h/.c
+			| - o model.h/.c
+		| - + math
+			| - o axis_aligned_box.h/.c
+			| - o frustum.h/.c
+			| - o matrix.h/.c
+			| - o plane.h/.c
+			| - o quaternion.h/.c
+			| - o vector3d.h/.c
+			| - o vector4d.h/.c
+		| - + physics
+			| - o collision.h/.c
+			| - o gravity.h/.c
+		| - + plugin
+			| - o targa.h/.c
+			| - o wf_object.h/.c
+			| - o [some audio driver(s)].h/.c
+		| - + script
+			| - o ????
+		| - + trigger
+			| - o action.h/.c
+			| - o event.h/.c
+			| - o manager.h/.c
+		| - + unit
+[OK]		| - o asgardBasic_unitTest.c
+		| - + widget
+			| - o auto_scroll.h/.c
+			| - o button.h/.c
+			| - o checkbox.h/.c
+			| - o dropdownbox.h/.c
+			| - o hyperlink.h/.c
+			| - o number_box.h/.c
+			| - o progress_bar.h/.c
+			| - o textbox.h/.c
+		| - o asgard.h
+| - + cpp
++ unit
+
+
+
+--------------------/ old /------------------------------------------
+
+	| - + system
+		| - + core
+			| - o rand.h/.c
+		| - + crypto
+			| - o aes.h/.c
+			| - o blowfish.h/.c
+			| - o rsa.h/.c
+			| - o ssc.h/.c
+		| - + data
+			| - o [generic key-value pair system (name TBD)]
+			| - o [generic key-value pair container system (name TBD)]
+		| - + db
+			| - o db.h/.c
+			| - o db_[plugin].h/.c
+		| - + encode
+			| - o base64.h/.c
+		| - + hash
+			| - o crc16.h/.c
+			| - o crc64.h/.c
+			| - o sha1.h/.c
+		| - + http
+		| - + index
+			| - o bptree.h/.c
+			| - o bptree_file.h/.c
+			| - o hash_map.h/.c
+			| - o hash_map_file.h/.c
+			| - o managed_index.h/.c
+		| - + math
+			| - o TBD
+		| - + network
+			| - o security.h/.c
+			| - o server.h/.c (the generic server API)
+			| - o transaction_manager.h/.c
+		| - + protocol
+			| - o socks4a.h/.c (the generic server API)
+		| - + registry
+			| - o registers.h/.c (registry system for non-win32)
+			| - o registry.h/.c
+		| - + socket
+			| - o client.h/.c (socket client API)
+			| - o server.h/.c (socket server API - not the server itself)
+		| - + stream
+			| - o block.h/.c (socket client API)
+			| - o stream.h/.c (socket client API)
+			| - o file_stream.h/.c (socket client API)
+			| - o socket_stream.h/.c (socket client API)
+		| - + type
+			| - o array_list.h/.c
+			| - o linked_list.h/.c
+			| - o stack.h/.c (supports both FIFO and FILO)
+		| - + util
+			| - o fzip.h/.c
+			| - o key_manager.h/.c
+		| - o system.h
+| - + java
+| - + sql
+

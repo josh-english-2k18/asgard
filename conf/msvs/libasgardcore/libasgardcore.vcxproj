@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCF8001B-9C4A-4541-888B-549245E50068}</ProjectGuid>
+    <RootNamespace>ProjectAsgard</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31227.257</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\lib\</OutDir>
+    <IntDir>..\..\..\build\msvc\libasgardcore\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\lib\</OutDir>
+    <IntDir>..\..\..\build\msvc\libasgardcore\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\plugin\include;..\..\..\src\c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;PROJECTASGARD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>libz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\plugin\lib\zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\plugin\include;..\..\..\src\c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PROJECTASGARD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>libz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\plugin\lib\zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\c\core\common\common.c" />
+    <ClCompile Include="..\..\..\src\c\core\common\plugin\dirent_windows.c" />
+    <ClCompile Include="..\..\..\src\c\core\common\string.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\core\ctype.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\core\endian.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\core\error.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\core\serialize.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\network\protocols\http.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\network\server.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\network\transaction_manager.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\system\dir.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\system\file.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\system\tmf.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\arraylist.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\bptree.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\fifostack.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\integer.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\intersect.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\json.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\lfbc.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\managed_index.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\range_index.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\wildcard_index.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\types\xpath.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\util\config.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\util\crc32.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\util\esa.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\util\log.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\util\pfs.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\util\sha1.c" />
+    <ClCompile Include="..\..\..\src\c\core\library\util\zlib.c" />
+    <ClCompile Include="..\..\..\src\c\core\memory\memory.c" />
+    <ClCompile Include="..\..\..\src\c\core\os\dl.c" />
+    <ClCompile Include="..\..\..\src\c\core\os\plugin\dl_windows.c" />
+    <ClCompile Include="..\..\..\src\c\core\os\plugin\time_windows.c" />
+    <ClCompile Include="..\..\..\src\c\core\os\time.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\mutex.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\mutex_windows.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\signal_windows.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\socket_windows.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\stacktrace_windows.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\system_windows.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\plugin\thread_windows.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\signal.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\socket.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\spinlock.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\stacktrace.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\system.c" />
+    <ClCompile Include="..\..\..\src\c\core\system\thread.c" />
+    <ClCompile Include="libasgardcore.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\c\core\common\common.h" />
+    <ClInclude Include="..\..\..\src\c\core\common\macros.h" />
+    <ClInclude Include="..\..\..\src\c\core\common\plugin\common_windows.h" />
+    <ClInclude Include="..\..\..\src\c\core\common\plugin\dirent_windows.h" />
+    <ClInclude Include="..\..\..\src\c\core\common\string.h" />
+    <ClInclude Include="..\..\..\src\c\core\common\version.h" />
+    <ClInclude Include="..\..\..\src\c\core\core.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\core\ctype.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\core\endian.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\core\error.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\core\serialize.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\library.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\network\protocols\http.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\network\server.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\network\transaction_manager.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\system\dir.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\system\file.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\system\tmf.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\arraylist.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\bptree.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\fifostack.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\integer.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\intersect.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\json.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\lfbc.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\managed_index.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\range_index.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\wildcard_index.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\types\xpath.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\util\config.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\util\crc32.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\util\esa.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\util\esa_rules.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\util\log.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\util\pfs.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\util\sha1.h" />
+    <ClInclude Include="..\..\..\src\c\core\library\util\zlib.h" />
+    <ClInclude Include="..\..\..\src\c\core\memory\memory.h" />
+    <ClInclude Include="..\..\..\src\c\core\os\dl.h" />
+    <ClInclude Include="..\..\..\src\c\core\os\plugin\dl_windows.h" />
+    <ClInclude Include="..\..\..\src\c\core\os\plugin\time_windows.h" />
+    <ClInclude Include="..\..\..\src\c\core\os\time.h" />
+    <ClInclude Include="..\..\..\src\c\core\os\types.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\mutex.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\mutex_windows.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\signal_windows.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\socket_windows.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\stacktrace_windows.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\system_windows.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\plugin\thread_windows.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\signal.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\socket.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\spinlock.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\stacktrace.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\system.h" />
+    <ClInclude Include="..\..\..\src\c\core\system\thread.h" />
+    <ClInclude Include="libasgardcore.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

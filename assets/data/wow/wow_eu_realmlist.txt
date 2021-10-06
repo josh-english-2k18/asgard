@@ -1,0 +1,254 @@
+World of Warcraft Europe — English-speaking Realms,
+Status,Realm Name,Type,Population,Queue
+Aerie Peak,Normal,Full
+Agamaggan,PvP,
+Aggramar,Normal,Full
+Ahn'Qiraj,PvP,
+Al'Akir,PvP,Full
+Alonsus,Normal,
+Anachronos,Normal,Full
+Arathor,Normal,Full
+Argent Dawn,RP,Full
+Aszune,Normal,Full
+Auchindoun,PvP,
+Azjol-Nerub,Normal,Full
+Azuremyst,Normal,
+Balnazzar,PvP,
+Blade's Edge,Normal,
+Bladefist,PvP,
+Bloodfeather,PvP,
+Bloodhoof,Normal,Full
+Bloodscalp,PvP,Full
+Boulderfist,PvP,
+Bronze Dragonflight,Normal,
+Bronzebeard,Normal,
+Burning Blade,PvP,
+Burning Legion,PvP,Full
+Burning Steppes,PvP,
+Chamber of Aspects,Normal,
+Chromaggus,PvP,
+Crushridge,PvP,Full
+Daggerspine,PvP,
+Darkmoon Faire,RP,
+Darksorrow,PvP,Full
+Darkspear,Normal,
+Deathwing,PvP,
+Defias Brotherhood,RP-PVP,
+Dentarg,PvP,Recommended
+Doomhammer,Normal,Full
+Draenor,Normal,Full
+Dragonblight,Normal,Full
+Dragonmaw,PvP,
+Drak'thul,PvP,
+Dunemaul,PvP,
+Earthen Ring,RP,
+Emerald Dream,Normal,Full
+Emeriss,PvP,
+Eonar,Normal,
+Executus,PvP,
+Frostmane,PvP,Full
+Frostwhisper,PvP,
+Genjuros,PvP,Recommended
+Ghostlands,Normal,Full
+Grim Batol,PvP,Full
+Hakkar,PvP,
+Haomarush,PvP,
+Hellfire,Normal,
+Hellscream,Normal,Full
+Jaedenar,PvP,
+Karazhan,PvP,
+Kazzak,PvP,Full
+Khadgar,Normal,
+Kilrogg,Normal,
+Kor'gall,PvP,
+Kul Tiras,Normal,
+Laughing Skull,PvP,
+Lightbringer,Normal,Full
+Lightning's Blade,PvP,
+Magtheridon,PvP,Full
+Mazrigos,PvP,
+Moonglade,RP,
+Nagrand,Normal,
+Neptulon,PvP,Full
+Nordrassil,Normal,Full
+Outland,PvP,Full
+Quel'Thalas,Normal,Full
+Ragnaros,PvP,Full
+Ravencrest,PvP,Full
+Ravenholdt,RP-PVP,
+Runetotem,Normal,Full
+Saurfang,Normal,Recommended
+Scarshield Legion,RP-PVP,
+Shadowsong,Normal,Full
+Shattered Halls,PvP,Recommended
+Shattered Hand,PvP,Full
+Silvermoon,Normal,Full
+Skullcrusher,PvP,
+Spinebreaker,PvP,
+Sporeggar,RP-PVP,Recommended
+Steamwheedle Cartel,RP,Recommended
+Stormrage,Normal,Full
+Stormreaver,PvP,Full
+Stormscale,PvP,Full
+Sunstrider,PvP,
+Sylvanas,PvP,Full
+Talnivarr,PvP,
+Tarren Mill,PvP,
+Terenas,Normal,
+Terokkar,Normal,
+The Maelstrom,PvP,
+The Sha'tar,RP,
+The Venture Co.,RP-PVP,
+Thunderhorn,Normal,Full
+Trollbane,PvP,
+Turalyon,Normal,Full
+Twilight's Hammer,PvP,Full
+Twisting Nether,PvP,
+Vashj,PvP,
+Vek'nilash,PvP,
+Wildhammer,Normal,
+Xavius,PvP,
+Zenedar,PvP,
+
+World of Warcraft Europe — German Speaking Realms
+Status,Realm Name,Type,Population,Queue
+Aegwynn,PvP,Full
+Alexstrasza,Normal,Full
+Alleria,Normal,Full
+Aman'Thul,Normal,Full
+Ambossar,Normal,Full
+Anetheron,PvP,
+Antonidas,Normal,Full
+Anub'arak,PvP,
+Area 52,Normal,
+Arthas,PvP,
+Arygos,Normal,
+Azshara,PvP,Full
+Baelgun,Normal,Full
+Blackhand,Normal,Full
+Blackmoore,PvP,Full
+Blackrock,PvP,Full
+Blutkessel,PvP,
+Dalvengyr,PvP,
+Das Konsortium,RP-PVP,Recommended
+Das Syndikat,RP-PVP,
+Der abyssische Rat,RP-PVP,
+Der Mithrilorden,RP,
+Der Rat von Dalaran,RP,
+Destromath,PvP,Full
+Dethecus,PvP,
+Die Aldor,RP,
+Die Arguswacht,RP-PVP,Recommended
+Die ewige Wacht,RP,
+Die Nachtwache,RP,Recommended
+Die Silberne Hand,RP,
+Die Todeskrallen,RP-PVP,
+Dun Morogh,Normal,Full
+Durotan,Normal,Full
+Echsenkessel,PvP,
+Eredar,PvP,
+Festung der Stürme,PvP,
+Forscherliga,RP,Recommended
+Frostmourne,PvP,
+Frostwolf,PvP,Full
+Garrosh,Normal,
+Gilneas,Normal,Full
+Gorgonnash,PvP,
+Gul'dan,PvP,
+Kargath,Normal,Full
+Kel'Thuzad,PvP,
+Khaz'goroth,Normal,Full
+Kil'Jaeden,PvP,
+Krag'jin,PvP,
+Kult der Verdammten,RP-PVP,Full
+Lordaeron,Normal,Full
+Lothar,Normal,Full
+Madmortem,Normal,Full
+Mal'Ganis,PvP,
+Malfurion,Normal,Full
+Malorne,Normal,
+Malygos,Normal,
+Mannoroth,PvP,
+Mug'thol,PvP,
+Nathrezim,PvP,
+Nazjatar,PvP,Recommended
+Nefarian,PvP,
+Nera'thor,PvP,
+Nethersturm,Normal,Full
+Norgannon,Normal,Full
+Nozdormu,Normal,
+Onyxia,PvP,Full
+Perenolde,Normal,
+Proudmoore,Normal,Full
+Rajaxx,PvP,
+Rexxar,Normal,
+Sen'jin,Normal,Full
+Shattrath,Normal,
+Taerar,PvP,
+Teldrassil,Normal,
+Terrordar,PvP,
+Theradras,PvP,
+Thrall,Normal,Full
+Tichondrius,PvP,
+Tirion,Normal,
+Todeswache,RP,
+Ulduar,Normal,Recommended
+Un'Goro,PvP,
+Vek'lor,PvP,Recommended
+Wrathbringer,PvP,
+Ysera,Normal,Full
+Zirkel des Cenarius,RP,Full
+Zuluhed,PvP,
+
+World of Warcraft Europe — French-speaking Realms,
+Status,Realm Name,Type,Population,Queue
+Arak-arahm,PvP,
+Arathi,PvP,Recommended
+Archimonde,PvP,Full
+Chants éternels,Normal,Full
+Cho'gall,PvP,
+Confrérie du Thorium,RP,
+Conseil des Ombres,RP-PVP,Full
+Culte de la Rive noire,RP-PVP,
+Dalaran,Normal,Full
+Drek'Thar,Normal,Full
+Eitrigg,Normal,Full
+Eldre'Thalas,PvP,
+Elune,Normal,Full
+Garona,PvP,
+Hyjal,Normal,Full
+Illidan,PvP,
+Kael'thas,PvP,
+Khaz Modan,Normal,
+Kirin Tor,RP,Full
+Krasus,Normal,
+La Croisade écarlate,RP-PVP,
+Les Clairvoyants,RP,
+Les Sentinelles,RP,
+Marécage de Zangar,Normal,
+Medivh,Normal,
+Naxxramas,PvP,
+Ner'zhul,PvP,
+Rashgarroth,PvP,
+Sargeras,PvP,
+Sinstralis,PvP,
+Suramar,Normal,Recommended
+Temple noir,PvP,
+Throk'Feroth,PvP,
+Uldaman,Normal,
+Varimathras,PvP,
+Vol'jin,Normal,
+Ysondre,PvP,Full
+
+World of Warcraft Europe — Spanish-speaking Realms,
+Status,Realm Name,Type,Population,Queue
+C'Thun,PvP,Full
+Dun Modr,PvP,Full
+Exodar,Normal,
+Los Errantes,RP,
+Minahonda,Normal,Full
+Sanguino,PvP,Recommended
+Shen'dralar,RP-PVP,Recommended
+Tyrande,Normal,Full
+Uldum,PvP,Full
+Zul'Jin,PvP,Full

@@ -1,0 +1,31 @@
+#
+# makefile.linux64
+#
+# Copyright (C) 2008 boy Joshua S. English. This document is the intellectual
+# property of Joshua S. English, all rights reserved.
+#
+# The 64-bit Linux make file for Asgard.
+#
+# Written by Josh English.
+#
+
+# define system & platform settings
+
+APP_EXT						=
+
+REMOVE						= rm -f
+
+LIBS						= \
+						$(INTERNAL_LIB_PATH)/libasgardcore.a \
+#						$(INTERNAL_LIB_PATH)/libasgardcore.so
+
+SYSTEM_FLAGS				= \
+						-fPIC
+
+SYSTEM_LIBS					= \
+						-lm \
+						-lcrypt \
+						-lpthread \
+						-rdynamic \
+						-ldl
+

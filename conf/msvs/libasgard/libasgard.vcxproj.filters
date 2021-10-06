@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{cc4c0667-3266-4d9e-80f2-fcd7b8aacb94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\plugin">
+      <UniqueIdentifier>{bd732910-56cc-49b0-ad17-e76d840a15f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{716f0f6c-cf6b-438c-973b-ed00580cd643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\plugin">
+      <UniqueIdentifier>{be0246c6-40cc-48e1-8a39-d374e27c7601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\shapes">
+      <UniqueIdentifier>{2fbdac84-a038-4571-9be3-2efd3157710e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\effects">
+      <UniqueIdentifier>{c809eb45-3720-4e5b-9c2a-3284dca5ac76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\2d">
+      <UniqueIdentifier>{e55b20bd-33d1-46c1-8b1e-e53131a8d77d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{a3d84cae-87c3-4a40-a26e-3f3478cdcf22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{978db8cb-63d4-45c4-8102-10ac5a0f36c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{35fdfa0f-b430-49ed-8a4d-9523bea21ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\plugin">
+      <UniqueIdentifier>{494a0494-6398-4dc9-a4ac-231c609a2550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine">
+      <UniqueIdentifier>{1164b61e-867e-4915-ad08-2e4b823895fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\plugin">
+      <UniqueIdentifier>{47cd2eeb-7e8f-4a5c-9737-fd2225bdf4fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\shapes">
+      <UniqueIdentifier>{e0dbdce6-863d-4e7a-b60c-aa8d85d0db59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\effects">
+      <UniqueIdentifier>{e846137c-47c7-47cb-bf13-e66a5fd9f9b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\2d">
+      <UniqueIdentifier>{605e0199-5b78-47da-b417-de98ed4aa6eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui">
+      <UniqueIdentifier>{04bd43b2-ba30-43a1-83a5-8d8b1bbcd125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{aeb08ef9-0836-4b4b-a4e4-ab267549abbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\c\asgard\core\canvas.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\core\colors.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\core\events.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\core\osapi.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\core\plugin\opengl.c">
+      <Filter>Source Files\core\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\core\plugin\win32api.c">
+      <Filter>Source Files\core\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\aac.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\camera.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\draw2d.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\draw3d.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\engine.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\font.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\material.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\pipeline.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\texture.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\plugin\font_windows.c">
+      <Filter>Source Files\engine\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\plugin\ogg_vorbis.c">
+      <Filter>Source Files\engine\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\plugin\openal.c">
+      <Filter>Source Files\engine\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\plugin\targa.c">
+      <Filter>Source Files\engine\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\plugin\wfobj.c">
+      <Filter>Source Files\engine\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\shapes\cone3d.c">
+      <Filter>Source Files\engine\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\shapes\sphere3d.c">
+      <Filter>Source Files\engine\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\effects\lightgl.c">
+      <Filter>Source Files\engine\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\effects\particle_engine.c">
+      <Filter>Source Files\engine\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\2d\animation2d.c">
+      <Filter>Source Files\engine\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\2d\camera2d.c">
+      <Filter>Source Files\engine\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\2d\physics2d.c">
+      <Filter>Source Files\engine\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\2d\sprite2d.c">
+      <Filter>Source Files\engine\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\engine\2d\tile2d.c">
+      <Filter>Source Files\engine\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\gui\autoscroll.c">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\gui\button.c">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\gui\checkbox.c">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\gui\textbox.c">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\math\aab3d.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\math\frustum3d.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\math\plane3d.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\asgard\math\vector3d.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\c\asgard\asgard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\core\canvas.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\core\colors.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\core\common.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\core\events.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\core\keys.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\core\osapi.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\core\plugin\keys_windows.h">
+      <Filter>Header Files\core\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\core\plugin\opengl.h">
+      <Filter>Header Files\core\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\core\plugin\win32api.h">
+      <Filter>Header Files\core\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\aac.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\camera.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\common.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\draw2d.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\draw3d.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\engine.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\font.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\material.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\pipeline.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\texture.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\plugin\font_windows.h">
+      <Filter>Header Files\engine\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\plugin\ogg_vorbis.h">
+      <Filter>Header Files\engine\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\plugin\openal.h">
+      <Filter>Header Files\engine\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\plugin\targa.h">
+      <Filter>Header Files\engine\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\plugin\wfobj.h">
+      <Filter>Header Files\engine\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\shapes\cone3d.h">
+      <Filter>Header Files\engine\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\shapes\sphere3d.h">
+      <Filter>Header Files\engine\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\effects\lightgl.h">
+      <Filter>Header Files\engine\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\effects\particle_engine.h">
+      <Filter>Header Files\engine\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\2d\animation2d.h">
+      <Filter>Header Files\engine\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\2d\camera2d.h">
+      <Filter>Header Files\engine\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\2d\common.h">
+      <Filter>Header Files\engine\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\2d\physics2d.h">
+      <Filter>Header Files\engine\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\2d\sprite2d.h">
+      <Filter>Header Files\engine\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\engine\2d\tile2d.h">
+      <Filter>Header Files\engine\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\gui\autoscroll.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\gui\button.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\gui\checkbox.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\gui\common.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\gui\textbox.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\math\aab3d.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\math\common.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\math\frustum3d.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\math\plane3d.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\asgard\math\vector3d.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

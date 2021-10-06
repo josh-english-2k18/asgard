@@ -1,0 +1,17 @@
+WoW CPR Navigation Options
+
++ login
+	+ determine if user is in a guild
+		+ obtain the set of logs for a guild
+			+ lookup log-history information
+				+ obtain the set of players who acted
+					+ obtain the 'applied healing' summary for a character
+				+ obtain the set of players who where acted upon
+					+ obtain the 'applied healing' summary for a character
+				+ obtain the 'applied healing' summary for a log history
+	+ obtain the characters for the user
+		+ obtain the set of logs for a character
+			+ lookup log-history information
+				+ obtain the 'applied healing' summary for a log history
+			+ obtain the 'applied healing' summary for a character
+

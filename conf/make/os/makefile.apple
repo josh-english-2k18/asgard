@@ -1,0 +1,31 @@
+#
+# makefile.apple
+#
+# Copyright (C) 2008 by Joshua S. English. This document is the intellectual
+# property of Joshua S. English, all rights reserved.
+#
+# The Mac OS X make file for Asgard.
+#
+# Written by Josh English.
+#
+
+# define system & platform settings
+
+APP_EXT						=
+
+REMOVE						= rm -f
+
+LIBS						= \
+						$(INTERNAL_LIB_PATH)/libasgardcore.a \
+#						$(INTERNAL_LIB_PATH)/libasgardcore.so
+
+SYSTEM_FLAGS				= \
+						-fPIC
+
+SYSTEM_LIBS					= \
+						-lm \
+						-lpthread \
+						-ldl
+#						-lcrypt \
+#						-rdynamic \
+

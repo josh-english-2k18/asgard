@@ -1,0 +1,10 @@
+APPS						= \
+		$(APP_PATH)/asgard-shell$(APP_EXT) \
+		$(APP_PATH)/beyblade_loadTest$(APP_EXT) \
+		$(APP_PATH)/forensic-daemon$(APP_EXT) \
+		$(APP_PATH)/string-comparison$(APP_EXT) \
+		$(APP_PATH)/vgr-stats$(APP_EXT) \
+		$(APP_PATH)/pokerGamePrototype$(APP_EXT) \
+		$(APP_PATH)/ascript$(APP_EXT) \
+		$(APP_PATH)/searchd$(APP_EXT) \
+		$(APP_PATH)/html2text$(APP_EXT) \

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\search">
+      <UniqueIdentifier>{24cd671a-1db0-42ae-abca-5206fdc141f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\search\core">
+      <UniqueIdentifier>{a87e6414-c406-40da-b67a-d0498873cfd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\search\system">
+      <UniqueIdentifier>{0a2ae33e-54ec-46cc-bf96-780dc5b33ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\search">
+      <UniqueIdentifier>{f8c499d7-4c0f-4007-ae53-a1a6aced6625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\search\core">
+      <UniqueIdentifier>{85501372-011a-43ed-be45-b7b68f14b5eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\search\system">
+      <UniqueIdentifier>{3f310fd7-7425-474c-8711-53432cd727e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\c\search\core\common.c">
+      <Filter>Source Files\search\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\search\core\container.c">
+      <Filter>Source Files\search\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\search\core\index_registry.c">
+      <Filter>Source Files\search\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\search\system\search_engine.c">
+      <Filter>Source Files\search\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\c\search\system\search_index.c">
+      <Filter>Source Files\search\system</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\c\search\search.h">
+      <Filter>Header Files\search</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\search\core\common.h">
+      <Filter>Header Files\search\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\search\core\container.h">
+      <Filter>Header Files\search\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\search\core\index_registry.h">
+      <Filter>Header Files\search\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\search\system\search_engine.h">
+      <Filter>Header Files\search\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\c\search\system\search_index.h">
+      <Filter>Header Files\search\system</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

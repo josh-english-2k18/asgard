@@ -1,0 +1,45 @@
+#
+# makefile.mingw
+#
+# Copyright (C) 2008 boy Joshua S. English. This document is the intellectual
+# property of Joshua S. English, all rights reserved.
+#
+# The 64-bit MinGW make file for Asgard.
+#
+# Written by Josh English.
+#
+
+# define system & platform settings
+
+APP_EXT						= .exe
+
+REMOVE						= rm -f
+
+COMPILER					= MINGW
+
+MINGW_DIRECTORY				= \
+						c:/files/applications/mingw-x64/mingw64/x86_64-w64-mingw32/lib
+#						c:/files/applications/mingw/lib
+
+LIBS						= \
+						$(INTERNAL_LIB_PATH)/libasgardcore.a
+#						$(INTERNAL_LIB_PATH)/libasgardcore.dll
+
+SYSTEM_FLAGS				= \
+#						-fPIC
+
+SYSTEM_LIBS					= \
+						-mwindows \
+						-L"ws2_32" \
+						-L$(MINGW_DIRECTORY) \
+						-lm \
+						-lwsock32 \
+						-lws2_32 \
+						$(MINGW_DIRECTORY)/libws2_32.a \
+						-lopengl32
+
+#						-lcrypt \
+#						-lpthread \
+#						-rdynamic \
+#						-ldl
+

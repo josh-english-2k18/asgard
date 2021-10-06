@@ -1,0 +1,11 @@
+SEARCH_OBJS						= \
+		$(SRC_PATH)/c/search/core/authentication.o \
+		$(SRC_PATH)/c/search/core/common.o \
+		$(SRC_PATH)/c/search/core/container.o \
+		$(SRC_PATH)/c/search/core/index_registry.o \
+		$(SRC_PATH)/c/search/system/lang/search_json.o \
+		$(SRC_PATH)/c/search/system/lang/search_sql.o \
+		$(SRC_PATH)/c/search/system/search_compiler.o \
+		$(SRC_PATH)/c/search/system/search_engine.o \
+		$(SRC_PATH)/c/search/system/search_index.o \
+		$(SRC_PATH)/c/search/system/search_sort.o \
